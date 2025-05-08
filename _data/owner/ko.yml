@@ -2,13 +2,13 @@
 # Owner's Personal Information
 ###########################################################
 # This is your brand name
-brand: "사이트 이름"
+brand: "TakaakiU"
 
 # text below the brand name
 brand_sub_text: "$site_sample"
 
 # used for seo meta post author (if it's not defined in post)
-name: "저자 이름"
+name: "takaakiu"
 
 # home page top header texts
 home:
@@ -48,10 +48,10 @@ meta_common_description: "귀하의 메타 설명."
 # the order of the items will be shown as here.
 # comment to remove any contact item
 contacts:
-  #- github: ""
+  - github: "takaakiu"
   #- email: ""
   #- linkedin: ""
-  #- twitter: ""
+  - twitter: "takaakiu_81z"
   #- mastodon: ""
   #- instagram: ""
   #- youtube: ""
