@@ -39,20 +39,24 @@ meta_description: "I built a personal website using GitHub Pages, Jekyll, and th
 #published: false
 ---
 
-<!-- outline-start -->
+Nice to meet you! I’m [takaakiu](https://github.com/takaakiu).  
 
-I built a personal website using GitHub Pages, Jekyll, and the Jekyll theme Mr. Green. I'll share the site along with a simple overview of the steps I took to create it.
+I wanted to create a website for business purposes, and this time, I set it up using **GitHub Pages × Jekyll (Theme: Mr. Green).**  
 
-<!-- outline-end -->
+To serve as a reference for myself, I’m documenting the steps I took. I hope this article helps someone along the way.  
 
-### Headings (centered)
-{:data-align="center"}
+## 概要
+### GitHub Pages
+### Jekyll
+### Jekyll Theme「Mr.Green」
 
-# Building a Personal Website with GitHub Pages & Jekyll
+## 前提条件
 
-Writing...
+- GitHubアカウント作成済み
+- インターネット環境に接続していること
+- 
 
-## 
+
 
 ### Heading 3
 
