@@ -39,7 +39,7 @@ meta_description: "I built a personal website using GitHub Pages, Jekyll, and th
 # published: false
 ---
 
-はじめまして、わたしは [TakaakiU](https://github.com/takaakiu) です。  
+はじめまして、 [TakaakiU](https://github.com/takaakiu) です。
 
 以前から気になっていた**Jekyll**（ジキル）と**GitHub Pages**（github.io）を使ってWebサイトを立ち上げました。
 Jekyllのテーマは、多言語対応している「**[Mr. Green](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)**」というテーマを使わさせて頂きました。
