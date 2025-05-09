@@ -1,11 +1,11 @@
 ---
 # multilingual page pair id, this must pair with translations of this page. (This name must be unique)
 lng_pair: id_Hello_Jekyll
-title: Hello, Jekyll and GitHub Pages
+title: Jekyll と GitHub Pages でこのサイトを立ち上げました
 
 # post specific
 # if not specified, .name will be used from _data/owner/[language].yml
-author: takaakiu
+author: TakaakiU
 # multiple category is not supported
 category: blog
 # multiple tag entries are possible
@@ -36,14 +36,15 @@ meta_description: "I built a personal website using GitHub Pages, Jekyll, and th
 # exclude from search engines
 #search_engine_exclude: true
 # to disable this page, simply set published: false or delete this file
-#published: false
+published: false
 ---
 
-Nice to meet you! I’m [takaakiu](https://github.com/takaakiu).  
+はじめまして、わたしは [TakaakiU](https://github.com/takaakiu) です。  
 
-I wanted to create a website for business purposes, and this time, I set it up using **GitHub Pages × Jekyll (Theme: Mr. Green).**  
+以前から気になっていた Jekyll（ジキル） と GitHub Pages（github.io）を使ってWebサイトを立ち上げました。
+Jekyllのテーマは、多言語対応している「**[Mr. Green](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)**」というテーマを使わさせて頂きました。
 
-To serve as a reference for myself, I’m documenting the steps I took. I hope this article helps someone along the way.  
+テーマ開発者の方がSNSで丁寧に手順を紹介してくれているので、思ったよりも簡単に作業が完了。わたし個人の備忘録を兼ねて簡単に実施した事を共有します。
 
 ## 概要
 ### GitHub Pages

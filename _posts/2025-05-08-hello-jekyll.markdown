@@ -5,7 +5,7 @@ title: Hello, Jekyll and GitHub Pages
 
 # post specific
 # if not specified, .name will be used from _data/owner/[language].yml
-author: takaakiu
+author: TakaakiU
 # multiple category is not supported
 category: blog
 # multiple tag entries are possible
@@ -36,28 +36,7 @@ meta_description: "I built a personal website using GitHub Pages, Jekyll, and th
 # exclude from search engines
 #search_engine_exclude: true
 # to disable this page, simply set published: false or delete this file
-#published: false
+published: false
 ---
 
-Nice to meet you! I’m [takaakiu](https://github.com/takaakiu).  
-
-I wanted to create a website for business purposes, and this time, I set it up using **GitHub Pages × Jekyll (Theme: Mr. Green).**  
-
-To serve as a reference for myself, I’m documenting the steps I took. I hope this article helps someone along the way.  
-
-## 概要
-### GitHub Pages
-### Jekyll
-### Jekyll Theme「Mr.Green」
-
-## 前提条件
-
-- GitHubアカウント作成済み
-- インターネット環境に接続していること
-
-## 
-
-## 参考文献
-
-[Jekyllテーマ「Mr.Green」を使用して GitHub Pages サイトを作成｜Mr.Green公式](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme/blob/main/README.md#github-pages)
-
+Writing ...
