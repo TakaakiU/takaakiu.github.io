@@ -149,8 +149,8 @@ archives:
 
 # for about layout
 about:
-  title: About
-  button_name: About
+  title: About TakaakiU
+  button_name: About TakaakiU
   email_title: email
 
 # for links layout
@@ -175,7 +175,7 @@ privacy-policy:
 constants:
   greetings: Hello
   welcome: Welcome
-  # sample: Sample
+  sample: Dev Blog
 
 # for contact form
 contact_form:
