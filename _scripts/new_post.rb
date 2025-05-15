@@ -13,15 +13,23 @@ timestamp = Time.now.strftime("%Y-%m-%d %H:%M:%S %z")
 filename_en = "_posts/#{date}-#{lng_pair}.markdown"
 filename_jp = "ja/_posts/#{date}-#{lng_pair}.markdown"
 
+# 🔍 既存ファイルのチェック
+if File.exist?(filename_en) || File.exist?(filename_jp)
+  puts "❌　該当のファイルはすでに存在します。処理を中断します。"
+  puts "　　　- #{filename_en}" if File.exist?(filename_en)
+  puts "　　　- #{filename_jp}" if File.exist?(filename_jp)
+  exit
+end
+
 # 記事のテンプレート（英語）
 content_en = <<~MD
 ---
 # multilingual page pair id, this must pair with translations of this page. (This name must be unique)
-lng_pair: id_#{lng_pair.capitalize}
-title: #{title.capitalize}
+lng_pair: id_#{lng_pair}
+title: #{title}
 
 # post specific
-author: #{author.capitalize}
+author: #{author}
 category: xxxx
 tags: [xxxx, xxxx]
 img: ":post_pic1.jpg"
@@ -46,11 +54,11 @@ MD
 content_jp = <<~MD
 ---
 # 多言語ページペアID。このIDは、このページの翻訳とペアになる必要があります。（この名前は一意でなければなりません）
-lng_pair: id_#{lng_pair.capitalize}
-title: #{title.capitalize}
+lng_pair: id_#{lng_pair}
+title: #{title}
 
 # 投稿固有の設定
-author: #{author.capitalize}
+author: #{author}
 category: xxxx
 tags: [xxxx, xxxx]
 img: ":post_pic1.jpg"
@@ -75,6 +83,6 @@ MD
 File.write(filename_en, content_en)
 File.write(filename_jp, content_jp)
 
-puts "✅ 記事ファイルを作成しました:"
-puts "  - #{filename_en}"
-puts "  - #{filename_jp}"
+puts "🎯　記事ファイルを作成しました:"
+puts "　　　- #{filename_en}"
+puts "　　　- #{filename_jp}"
