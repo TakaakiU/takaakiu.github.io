@@ -41,10 +41,10 @@ meta_description: "I built a personal website using GitHub Pages, Jekyll, and th
 
 はじめまして、 [TakaakiU](https://github.com/takaakiu) です。
 
-以前から気になっていた**Jekyll**（ジキル）と**GitHub Pages**（github.io）を使ってWebサイトを立ち上げました。
+以前から気になっていた**Jekyll**（ジキル）と**GitHub Pages**（github.io）を使って、このWebサイトを立ち上げました。
 Jekyllのテーマは、多言語対応している「**[Mr. Green](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)**」というテーマを使わさせて頂きました。
 
-テーマ開発者の方がSNSで丁寧に手順を紹介してくれているので、思ったよりも簡単に作業が完了。わたし個人の備忘録を兼ねて簡単に実施した事を共有します。
+テーマ開発者の方がSNSで丁寧に手順を紹介してくれているので、思ったよりも簡単に作業が完了。わたし個人の備忘録を兼ねて実施した事を共有します。
 
 ## 概要
 
@@ -101,7 +101,39 @@ GitHub公式では上記のように記載。
 >   これらの制限は**正当な利用を妨げるものではありません**。  
 >   もしリクエストがレート制限に引っかかった場合は、HTTPステータスコード**429**と共に、説明が記載されたHTMLレスポンスが返されます。
 >
-> 引用元：[GitHub Pages limits](https://docs.github.com/ja/pages/getting-started-with-github-pages/github-pages-limits)
+> 引用元：[GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)
+
+<details>
+
+<summary>原文：GitHub Pages limits | GitHub公式</summary>
+
+```
+## Usage limits
+
+GitHub Pages is not intended for or allowed to be used as a free web-hosting service to run your online business, e-commerce site, or any other website that is primarily directed at either facilitating commercial transactions or providing commercial software as a service (SaaS). GitHub Pages sites shouldn't be used for sensitive transactions like sending passwords or credit card numbers.
+
+In addition, your use of GitHub Pages is subject to the [GitHub Terms of Service](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service), including the restrictions on get-rich-quick schemes, sexually obscene content, and violent or threatening content or activity.
+
+GitHub Pages sites are subject to the following usage limits:
+
+- You can only create one user or organization site for each account on GitHub.
+
+- GitHub Pages source repositories have a recommended limit of 1 GB. For more information, see [About large files on GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#file-and-repository-size-limitations).
+
+- Published GitHub Pages sites may be no larger than 1 GB.
+
+- GitHub Pages deployments will timeout if they take longer than 10 minutes.
+
+- GitHub Pages sites have a soft bandwidth limit of 100 GB per month.
+
+- GitHub Pages sites have a soft limit of 10 builds per hour. This limit does not apply if you build and publish your site with a custom GitHub Actions workflow.
+
+- In order to provide consistent quality of service for all GitHub Pages sites, rate limits may apply. These rate limits are not intended to interfere with legitimate uses of GitHub Pages. If your request triggers rate limiting, you will receive an appropriate response with an HTTP status code of `429`, along with an informative HTML body.
+
+If your site exceeds these usage quotas, we may not be able to serve your site, or you may receive a polite email from GitHub Support suggesting strategies for reducing your site's impact on our servers, including putting a third-party content distribution network (CDN) in front of your site, making use of other GitHub features such as releases, or moving to a different hosting service that might better fit your needs.
+```
+
+</details>
 
 いろいろ制限はありますが、個人の簡易なサイトでは問題なく運用できそうです。
 
