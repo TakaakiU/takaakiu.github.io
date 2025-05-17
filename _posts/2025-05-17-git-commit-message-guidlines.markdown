@@ -45,7 +45,7 @@ Below is the beginning of the summarized content.
 ## Meaning of Each Element and Recommended Guidelines
 - **Type** 
     - Each type has a defined purpose, ensuring clear classification of the changes. 
-        - Indicates the type of commit (e.g., `feat`, `fix`, `docs`, `chore`, `refactor`, `style`, `test`).
+    - Indicates the type of commit (e.g., `feat`, `fix`, `docs`, `chore`, `refactor`, `style`, `test`).
         Write a short prefix that immediately indicates the type of commit. Use the same categories as in [Semantic Commit Messages](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716).
 
         - **chore:**  
