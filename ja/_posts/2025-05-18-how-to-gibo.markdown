@@ -7,7 +7,7 @@ title: .gitignoreを半自動で作成できる「gibo」を使ってみた
 author: TakaakiU
 category: Tech
 tags: [git]
-img: ":post_pic1.jpg"
+img: ":post_tech.jpg"
 
 # 公開日
 date: 2025-05-18 01:01:02 +0900

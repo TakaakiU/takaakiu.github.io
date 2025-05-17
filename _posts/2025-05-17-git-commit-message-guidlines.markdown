@@ -7,7 +7,7 @@ title: Summary of Git Commit Message Guidelines!
 author: TakaakiU
 category: Idea
 tags: [git]
-img: ":post_pic1.jpg"
+img: ":post_idea.jpg"
 
 # publish date
 date: 2025-05-17 01:23:53 +0000

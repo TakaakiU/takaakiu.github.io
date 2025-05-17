@@ -11,7 +11,7 @@ category: Tech
 # multiple tag entries are possible
 tags: [jekyll, git, github]
 # thumbnail image for post
-img: ":post_pic1.jpg"
+img: ":post_tech.jpg"
 # disable comments on this page
 #comments_disable: true
 

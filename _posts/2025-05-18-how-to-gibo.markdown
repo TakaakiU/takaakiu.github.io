@@ -7,7 +7,7 @@ title: How to Gibo\!
 author: TakaakiU
 category: Tech
 tags: [git]
-img: ":post_pic1.jpg"
+img: ":post_tech.jpg"
 
 # publish date
 date: 2025-05-18 01:01:02 +0900
