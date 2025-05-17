@@ -73,10 +73,10 @@ post:
     # char or words per minute
     per_minute: 500
   pager_buttons:
-    older_post: "← 古い投稿へ"
-    newer_post: "新しい投稿へ →"
-    first_post: 最初
-    last_post: 最後
+    older_post: "👈 古い投稿へ"
+    newer_post: "新しい投稿へ 👉"
+    first_post: First
+    last_post: Last
   comments:
     noscript: コメントを表示するには、JavaScriptを有効にしてください。
     disqus:
