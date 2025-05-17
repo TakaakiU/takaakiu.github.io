@@ -37,59 +37,58 @@ Below is the beginning of the summarized content.
 
 ## Basic Format of Commit Messages
 - Written based on **Semantic Commit Message**
-  - **Format example:**  
-    `<Type>: <Emoji> #<Issue Number> <Title>`
+    - **Format example:**  
+        `<Type>: <Emoji> #<Issue Number> <Title>`
 - **Example:**  
-  `feat: ✨ #123 Implement login functionality`
+    `feat: ✨ #123 Implement login functionality`
 
 ## Meaning of Each Element and Recommended Guidelines
-- **Type**  
-  - Indicates the type of commit (e.g., `feat`, `fix`, `docs`, `chore`, `refactor`, `style`, `test`).
-    Write a short prefix that immediately indicates the type of commit. Use the same categories as in [Semantic Commit Messages](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716).
+- **Type** 
+    - Each type has a defined purpose, ensuring clear classification of the changes. 
+        - Indicates the type of commit (e.g., `feat`, `fix`, `docs`, `chore`, `refactor`, `style`, `test`).
+        Write a short prefix that immediately indicates the type of commit. Use the same categories as in [Semantic Commit Messages](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716).
 
-    - **chore:**  
-      Changes that do not affect production code, such as updates to task files or build configurations.
+        - **chore:**  
+            Changes that do not affect production code, such as updates to task files or build configurations.
 
-    - **docs:**  
-      Documentation updates and changes.
+        - **docs:**  
+            Documentation updates and changes.
 
-    - **feat:**  
-      Addition or modification of features aimed at end users.
+        - **feat:**  
+            Addition or modification of features aimed at end users.
 
-    - **fix:**  
-      Bug fixes that resolve issues impacting users.
+        - **fix:**  
+            Bug fixes that resolve issues impacting users.
 
-    - **refactor:**  
-      Code restructuring or refactoring changes that improve code quality without altering external behavior.
+        - **refactor:**  
+            Code restructuring or refactoring changes that improve code quality without altering external behavior.
 
-    - **style:**  
-      Formatting and style changes (e.g., code indentation, fixing typos) that do not affect the functionality of production code.
+        - **style:**  
+            Formatting and style changes (e.g., code indentation, fixing typos) that do not affect the functionality of production code.
 
-    - **test:**  
-      Additions or changes to test code without impacting production code.
-
-  - Each type has a defined purpose, ensuring clear classification of the changes.
+        - **test:**  
+            Additions or changes to test code without impacting production code.
 - **Emoji**  
-  - An emoji used to visually represent the commit type.
-  - Inspired by tools like gitmoji, aiming for a more colorful expression.
+    - An emoji used to visually represent the commit type.
+    - Inspired by tools like gitmoji, aiming for a more colorful expression.
 - **Issue Number**  
-  - Links the commit to a related issue, helping to clarify the reason (the "why") behind the change.
-  - Although not mandatory, linking commits to issues is recommended whenever possible.
+    - Links the commit to a related issue, helping to clarify the reason (the "why") behind the change.
+    - Although not mandatory, linking commits to issues is recommended whenever possible.
 - **Title**  
-  - Briefly summarizes the changes.
-  - Aim for approximately 20–30 characters to keep it concise and clear.
+    - Briefly summarizes the changes.
+    - Aim for approximately 20–30 characters to keep it concise and clear.
 
 ## Other Considerations
 - **Coordination with the Development Workflow**  
-  - This approach assumes a development process driven by issues and pull/merge requests.
-  - Since a commit message alone may not fully convey the "why," detailed background information should be provided via issues or PR descriptions.
+    - This approach assumes a development process driven by issues and pull/merge requests.
+    - Since a commit message alone may not fully convey the "why," detailed background information should be provided via issues or PR descriptions.
 - **Commit Granularity**  
-  - It is preferable to have small, focused commits.
-  - Merge commits or revert commits may follow a different set of guidelines.
+    - It is preferable to have small, focused commits.
+    - Merge commits or revert commits may follow a different set of guidelines.
 - **Choice of Language**  
-  - Depending on the team or project's practices, commit messages can be written in either Japanese or English.
+    - Depending on the team or project's practices, commit messages can be written in either Japanese or English.
 - **Flexibility and Future Changes**  
-  - Since the way commit messages are written evolves over time, there is always room for updating what is considered the “best approach” at any given moment.
+    - Since the way commit messages are written evolves over time, there is always room for updating what is considered the “best approach” at any given moment.
 
 ## Summary
 - Commit messages are a vital source of information that enhances the overall value of development history.
