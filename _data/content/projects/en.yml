@@ -5,33 +5,33 @@
 page_data:
   main:
     header: "Projects"
-    info: "Your Project page description."
+    info: "Post project development records, documents, and notices."
     text_color: "white"
     # if you don't want to use background image, comment it. back_color will be activated.
     img: ":projects-heading.jpg"
     back_color: "lightblue"
 
   category:
-    - title: "Example"
-      type: id_example
+    - title: "Dev Logs"
+      type: id_devlogs
       color: "gray"
-    - title: "Picture"
-      type: id_picture
+    - title: "Documents"
+      type: id_documents
       color: "#62b462"
-    - title: "Quote"
-      type: id_quote
+    - title: "Notices"
+      type: id_notices
       color: "#2FD0ED"
 
   list:
-    # example
-    - type: id_example
-      project_name: "Example Project"
-      project_excerpt: "Examples"
+    # devlogs
+    - type: id_devlogs
+      project_name: "Nitaku"
+      project_excerpt: "2つの選択肢を繰り返すことで、Tier表を作成できるモバイルアプリ。"
       img: ":project1_thumb.jpg"
       img_title: "img title1"
-      date: "2021-03-13"
+      date: "2025-05-18"
       post: |
-        # Examples
+        # Dev Logs
 
         This is an example page to display markdown related styles for Mr. Green Jekyll Theme.
 
@@ -171,23 +171,23 @@ page_data:
           print(i)
         ```
 
-    # picture
-    - type: id_picture
-      project_name: "Example Project"
-      project_excerpt: "Picture"
+    # documents
+    - type: id_documents
+      project_name: "Documents"
+      project_excerpt: "Post project tutorials, guides, specifications, and manuals."
       img: ":project2_thumb.jpg"
       img_title: "img title2"
-      date: "2021-04-23"
+      date: "2025-05-18"
       post: |
         # Title
         This is project content.
 
         ![Image](:project2_thumb.jpg)
 
-    # quote
-    - type: id_quote
-      project_name: "Example Project"
-      project_excerpt: "William Shakespeare"
+    # notices
+    - type: id_notices
+      project_name: "Notices"
+      project_excerpt: "Post updates and defect information on deliverables."
       #img: ":project1_thumb.jpg"
       #img_title: "img title3"
       date: "2021-05-27"
@@ -206,7 +206,7 @@ page_data:
         But bears it out even to the edge of doom.
         If this be error and upon me proved,
         I never writ, nor no man ever loved.
-    - type: id_quote
+    - type: id_notices
       project_name: "Example Project"
       project_excerpt: "Albert Einstein"
       img: ":project2_thumb.jpg"
@@ -214,7 +214,7 @@ page_data:
       date: "2021-06-08"
       post: |
         Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.
-    - type: id_quote
+    - type: id_notices
       project_name: "Example Project"
       project_excerpt: "Mae West"
       img: ":project1_thumb.jpg"

@@ -5,7 +5,7 @@ title: Gitコミットメッセージのガイドラインを要約！
 
 # post specific
 author: TakaakiU
-category: developer
+category: Idea
 tags: [git]
 img: ":post_pic1.jpg"
 

@@ -7,9 +7,9 @@ title: Jekyll と GitHub Pages でこのサイトを立ち上げました
 # if not specified, .name will be used from _data/owner/[language].yml
 author: TakaakiU
 # multiple category is not supported
-category: blog
+category: Tech
 # multiple tag entries are possible
-tags: [jekyll, github]
+tags: [jekyll, git, github]
 # thumbnail image for post
 img: ":post_pic1.jpg"
 # disable comments on this page

@@ -7,7 +7,7 @@ title: Hello, Jekyll and GitHub Pages
 # if not specified, .name will be used from _data/owner/[language].yml
 author: TakaakiU
 # multiple category is not supported
-category: blog
+category: Tech
 # multiple tag entries are possible
 tags: [jekyll, github]
 # thumbnail image for post

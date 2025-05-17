@@ -5,33 +5,33 @@
 page_data:
   main:
     header: "プロジェクト"
-    info: "プロジェクトページの説明はこちら。"
+    info: "プロジェクトの開発記録やドキュメント、お知らせを掲載。"
     text_color: "white"
     # if you don't want to use background image, comment it. back_color will be activated.
     img: ":projects-heading.jpg"
     back_color: "lightblue"
 
   category:
-    - title: "例"
-      type: id_example
+    - title: "開発ログ"
+      type: id_devlogs
       color: "gray"
-    - title: "写真"
-      type: id_picture
+    - title: "ドキュメント"
+      type: id_documents
       color: "#62b462"
-    - title: "名言"
-      type: id_quote
+    - title: "お知らせ"
+      type: id_notices
       color: "#2FD0ED"
 
   list:
-    # example
+    # devlogs
     - type: id_example
-      project_name: "サンプルプロジェクト"
+      project_name: "二択（nitaku）"
       project_excerpt: "例"
       img: ":project1_thumb.jpg"
       img_title: "img title1"
-      date: "2021-03-13"
+      date: "2025-05-18"
       post: |
-        # Examples
+        # Dev Logs
 
         This is an example page to display markdown related styles for Mr. Green Jekyll Theme.
 
@@ -171,26 +171,26 @@ page_data:
           print(i)
         ```
 
-    # picture
-    - type: id_picture
-      project_name: "サンプルプロジェクト"
-      project_excerpt: "写真"
+    # documents
+    - type: id_documents
+      project_name: "ドキュメント"
+      project_excerpt: "プロジェクトに関するチュートリアル、ガイド、仕様書、マニュアルを掲載。"
       img: ":project2_thumb.jpg"
       img_title: "img title2"
-      date: "2021-04-23"
+      date: "2025-05-18"
       post: |
         # Title
         This is project content.
 
         ![Image](:project2_thumb.jpg)
 
-    # quote
-    - type: id_quote
-      project_name: "サンプルプロジェクト"
-      project_excerpt: "William Shakespeare"
+    # notices
+    - type: id_notices
+      project_name: "お知らせ"
+      project_excerpt: "成果物の更新や不具合情報を掲載。"
       #img: ":project1_thumb.jpg"
       #img_title: "img title3"
-      date: "2021-05-27"
+      date: "2025-05-18"
       post: |
         Let me not to the marriage of true minds
         Admit impediments. Love is not love
@@ -206,7 +206,7 @@ page_data:
         But bears it out even to the edge of doom.
         If this be error and upon me proved,
         I never writ, nor no man ever loved.
-    - type: id_quote
+    - type: id_notices
       project_name: "サンプルプロジェクト"
       project_excerpt: "Albert Einstein"
       img: ":project2_thumb.jpg"
@@ -214,7 +214,7 @@ page_data:
       date: "2021-06-08"
       post: |
         Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.
-    - type: id_quote
+    - type: id_notices
       project_name: "サンプルプロジェクト"
       project_excerpt: "Mae West"
       img: ":project1_thumb.jpg"
@@ -222,7 +222,7 @@ page_data:
       date: "2021-08-20"
       post: |
         You only live once, but if you do it right, once is enough.
-    - type: id_quote
+    - type: id_notices
       project_name: "サンプルプロジェクト"
       project_excerpt: "Mahatma Gandhi "
       img: ":project2_thumb.jpg"

@@ -30,6 +30,7 @@ title: #{title}
 
 # post specific
 author: #{author}
+# Tech or Idea
 category: xxxx
 tags: [xxxx, xxxx]
 img: ":post_pic1.jpg"
@@ -59,6 +60,7 @@ title: #{title}
 
 # 投稿固有の設定
 author: #{author}
+# Tech or Idea
 category: xxxx
 tags: [xxxx, xxxx]
 img: ":post_pic1.jpg"

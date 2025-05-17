@@ -37,12 +37,12 @@ creative_commons:
   # 4. by-nc     Attribution-NonCommercial 4.0 International
   # 5. by-nc-nd  Attribution-NonCommercial-NoDerivatives 4.0 International
   # 6. by-nc-sa  Attribution-NonCommercial-ShareAlike 4.0 International
-  license_type: "by-sa"
+  license_type: "by"
 
 # seo meta this is needed for each language
 # If meta_description is not defined in front matter, it's created from (post / page) content,
 # if it has no content, this will be used for page description. It is also used in manifest.json
-meta_common_description: "メタディスクリプション"
+meta_common_description: "このサイトは、私の個人的な開発経験と成果物を記録するために開設。"
 
 # contact options (side nav bottom and about page)
 # the order of the items will be shown as here.

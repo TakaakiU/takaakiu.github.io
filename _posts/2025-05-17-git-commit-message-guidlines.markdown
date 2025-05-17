@@ -5,7 +5,7 @@ title: Summary of Git Commit Message Guidelines!
 
 # post specific
 author: TakaakiU
-category: developer
+category: Idea
 tags: [git]
 img: ":post_pic1.jpg"
 
