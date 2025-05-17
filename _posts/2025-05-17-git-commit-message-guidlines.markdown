@@ -45,6 +45,32 @@ Below is the beginning of the summarized content.
 ## Meaning of Each Element and Recommended Guidelines
 - **Type**  
   - Indicates the type of commit (e.g., `feat`, `fix`, `docs`, `chore`, `refactor`, `style`, `test`).
+    
+    ```
+    Write a short prefix that immediately indicates the type of commit. Use the same categories as in [Semantic Commit Messages](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716).
+
+    - **chore:**  
+      Changes that do not affect production code, such as updates to task files or build configurations.
+
+    - **docs:**  
+      Documentation updates and changes.
+
+    - **feat:**  
+      Addition or modification of features aimed at end users.
+
+    - **fix:**  
+      Bug fixes that resolve issues impacting users.
+
+    - **refactor:**  
+      Code restructuring or refactoring changes that improve code quality without altering external behavior.
+
+    - **style:**  
+      Formatting and style changes (e.g., code indentation, fixing typos) that do not affect the functionality of production code.
+
+    - **test:**  
+      Additions or changes to test code without impacting production code.
+    ```
+
   - Each type has a defined purpose, ensuring clear classification of the changes.
 - **Emoji**  
   - An emoji used to visually represent the commit type.
