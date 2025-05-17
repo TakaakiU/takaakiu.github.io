@@ -24,9 +24,9 @@ page_data:
 
   list:
     # devlogs
-    - type: id_example
+    - type: id_devlogs
       project_name: "二択（nitaku）"
-      project_excerpt: "例"
+      project_excerpt: "2つの選択肢を繰り返すことで、Tier表を作成できるモバイルアプリ。"
       img: ":project1_thumb.jpg"
       img_title: "img title1"
       date: "2025-05-18"

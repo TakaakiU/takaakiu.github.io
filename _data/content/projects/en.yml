@@ -26,7 +26,7 @@ page_data:
     # devlogs
     - type: id_devlogs
       project_name: "Nitaku"
-      project_excerpt: "2つの選択肢を繰り返すことで、Tier表を作成できるモバイルアプリ。"
+      project_excerpt: "A mobile app that allows you to create a tier table by repeating two choices."
       img: ":project1_thumb.jpg"
       img_title: "img title1"
       date: "2025-05-18"
