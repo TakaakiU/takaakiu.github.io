@@ -160,12 +160,12 @@ Mr.Green公式の[こちらの手順](https://github.com/MrGreensWorkshop/MrGree
 
 1. Forkした後、`_config.yml` の `url` を変更
 
-  ```diff
-  - url: "https://your_github_user_name.github.io"
-  + url: "https://takaakiu.github.io"
-  ```
-
-  → 実際に設定した`_config.yml`は[こちら](https://github.com/takaakiu/takaakiu.github.io/blob/main/_config.yml){:target="_blank" rel="noopener noreferrer"}
+    ```diff
+    - url: "https://your_github_user_name.github.io"
+    + url: "https://takaakiu.github.io"
+    ```
+        
+    → 実際に設定した`_config.yml`は[こちら](https://github.com/takaakiu/takaakiu.github.io/blob/main/_config.yml){:target="_blank" rel="noopener noreferrer"}
 
 1. Forkしたリポジトリの名前を `takaakiu.github.io` に変更
 
