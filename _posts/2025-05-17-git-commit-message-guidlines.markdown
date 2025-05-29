@@ -24,7 +24,7 @@ date: 2025-05-17 01:23:53 +0000
 #published: false
 ---
 
-Since I frequently refer to [How to Write Git Commit Messages (2023 Version)](https://zenn.dev/itosho/articles/git-commit-message-2023), I decided to post this summary for easy reference.
+Since I frequently refer to [How to Write Git Commit Messages (2023 Version)](https://zenn.dev/itosho/articles/git-commit-message-2023){:target="_blank" rel="noopener noreferrer"}, I decided to post this summary for easy reference.
 
 Below is the beginning of the summarized content.
 
@@ -46,7 +46,7 @@ Below is the beginning of the summarized content.
 - **Type** 
     - Each type has a defined purpose, ensuring clear classification of the changes. 
     - Indicates the type of commit (e.g., `feat`, `fix`, `docs`, `chore`, `refactor`, `style`, `test`).
-        Write a short prefix that immediately indicates the type of commit. Use the same categories as in [Semantic Commit Messages](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716).
+        Write a short prefix that immediately indicates the type of commit. Use the same categories as in [Semantic Commit Messages](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716){:target="_blank" rel="noopener noreferrer"}.
 
         - **chore:**  
             Changes that do not affect production code, such as updates to task files or build configurations.

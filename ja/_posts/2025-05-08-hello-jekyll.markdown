@@ -39,10 +39,10 @@ meta_description: "I built a personal website using GitHub Pages, Jekyll, and th
 # published: false
 ---
 
-はじめまして、 [TakaakiU](https://github.com/takaakiu) です。
+はじめまして、 [TakaakiU](https://github.com/takaakiu){:target="_blank" rel="noopener noreferrer"} です。
 
 以前から気になっていた**Jekyll**（ジキル）と**GitHub Pages**（github.io）を使って、このWebサイトを立ち上げました。
-Jekyllのテーマは、多言語対応している「**[Mr. Green](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)**」というテーマを使わさせて頂きました。
+Jekyllのテーマは、多言語対応している「**[Mr. Green](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme){:target="_blank" rel="noopener noreferrer"}**」というテーマを使わさせて頂きました。
 
 テーマ開発者の方がSNSで丁寧に手順を紹介してくれているので、思ったよりも簡単に作業が完了。わたし個人の備忘録を兼ねて実施した事を共有します。
 
@@ -62,7 +62,7 @@ Jekyllのテーマは、多言語対応している「**[Mr. Green](https://gith
 
 > You can use GitHub Pages to host a website about yourself, your organization, or your project directly from a repository on GitHub.
 >
-> 引用元：[What is GitHub Pages?](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) より
+> 引用元：[What is GitHub Pages?](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages){:target="_blank" rel="noopener noreferrer"} より
 
 **↑↑↑ 折りたたみ - ここまで ↑↑↑**
 
@@ -76,7 +76,7 @@ Jekyllのテーマは、多言語対応している「**[Mr. Green](https://gith
 >   各GitHubアカウントにつき、**1つのユーザーまたは組織サイト**のみ作成できます。
 >
 > - **リポジトリの推奨サイズ制限**  
->   GitHub Pagesのソースリポジトリの**推奨サイズ上限は1GB**です。詳細は[GitHubの大容量ファイルについて](https://docs.github.com/en/github/managing-large-files/about-large-files-on-github)をご覧ください。
+>   GitHub Pagesのソースリポジトリの**推奨サイズ上限は1GB**です。詳細は[GitHubの大容量ファイルについて](https://docs.github.com/en/github/managing-large-files/about-large-files-on-github){:target="_blank" rel="noopener noreferrer"}をご覧ください。
 >
 > - **公開サイトのサイズ制限**  
 >   公開されたGitHub Pagesのサイトは**最大1GB**のサイズ制限があります。
@@ -96,7 +96,7 @@ Jekyllのテーマは、多言語対応している「**[Mr. Green](https://gith
 >   これらの制限は**正当な利用を妨げるものではありません**。  
 >   もしリクエストがレート制限に引っかかった場合は、HTTPステータスコード**429**と共に、説明が記載されたHTMLレスポンスが返されます。
 >
-> 引用元：[GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)
+> 引用元：[GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits){:target="_blank" rel="noopener noreferrer"}
 
 <details markdown="1">
 
@@ -107,14 +107,14 @@ Jekyllのテーマは、多言語対応している「**[Mr. Green](https://gith
 > GitHub Pages sites are subject to the following usage limits:
 >
 > - You can only create one user or organization site for each account on GitHub.
-> - GitHub Pages source repositories have a recommended limit of 1 GB. For more information, see [About large files on GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#file-and-repository-size-limitations).
+> - GitHub Pages source repositories have a recommended limit of 1 GB. For more information, see [About large files on GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#file-and-repository-size-limitations){:target="_blank" rel="noopener noreferrer"}.
 > - Published GitHub Pages sites may be no larger than 1 GB.
 > - GitHub Pages deployments will timeout if they take longer than 10 minutes.
 > - GitHub Pages sites have a soft bandwidth limit of 100 GB per month.
 > - GitHub Pages sites have a soft limit of 10 builds per hour. This limit does not apply if you build and publish your site with a custom GitHub Actions workflow.
 > - In order to provide consistent quality of service for all GitHub Pages sites, rate limits may apply. These rate limits are not intended to interfere with legitimate uses of GitHub Pages. If your request triggers rate limiting, you will receive an appropriate response with an HTTP status code of 429, along with an informative HTML body.
 >
-> 引用元：[GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)
+> 引用元：[GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits){:target="_blank" rel="noopener noreferrer"}
 
 **↑↑↑ 折りたたみ - ここまで ↑↑↑**
 
@@ -124,25 +124,25 @@ Jekyllのテーマは、多言語対応している「**[Mr. Green](https://gith
 
 ### Jekyll
 
-[Jekyll](https://jekyllrb.com/)。読み方は「ジキル」です。
+[Jekyll](https://jekyllrb.com/){:target="_blank" rel="noopener noreferrer"}。読み方は「ジキル」です。
 
 > Jekyllは2008年にTom Preston-Wernerによって初めてリリースされました。その後、GitHubの従業員であるParker MooreがJekyllを引き継ぎ、Jekyll 1のリリースを主導しました。
 > 
 > Jekyllは、静的ウェブサイトへのWeb開発のトレンドのきっかけとなりました。2017年には、GitHubでの採用が大きな要因となり、Jekyllは最も人気のある静的サイトジェネレーターにランクインしました。GitHub上のJekyllプロジェクトは継続的に更新されており、バグ修正のためのリリースも行われています。
 > 
-> 引用元：[Jekyll - Wikipedia](https://en.wikipedia.org/wiki/Jekyll_(software)#History)
+> 引用元：[Jekyll - Wikipedia](https://en.wikipedia.org/wiki/Jekyll_(software)#History){:target="_blank" rel="noopener noreferrer"}
 
-[こちら](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll)にもある通り、GitHub公式がJekyllを使ったサイトの立ち上げ方を公開。
+[こちら](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll){:target="_blank" rel="noopener noreferrer"}にもある通り、GitHub公式がJekyllを使ったサイトの立ち上げ方を公開。
 
 #### Jekyll テーマ「Mr.Green」
 
-Jekyllには数多くのテーマがあります。その中で多言語対応していて、見た目もキレイなテーマ「[Mr. Green](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)」を使っています。
+Jekyllには数多くのテーマがあります。その中で多言語対応していて、見た目もキレイなテーマ「[Mr. Green](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme){:target="_blank" rel="noopener noreferrer"}」を使っています。
 
-たしか「[Jekyll ＋ テーマ ＋ 日本語対応 ＋ 多言語](https://www.google.com/search?q=Jekyll+テーマ+日本語対応+多言語)」などのキーワードで公式の記事が上位にあって、たどり着きました。
+たしか「[Jekyll ＋ テーマ ＋ 日本語対応 ＋ 多言語](https://www.google.com/search?q=Jekyll+テーマ+日本語対応+多言語){:target="_blank" rel="noopener noreferrer"}」などのキーワードで公式の記事が上位にあって、たどり着きました。
 
-また、[この方のサイト](https://blog.ingen084.net/posts/2023-06-18-renew-again)をみて、見やすいテーマだなと思いました。
+また、[この方のサイト](https://blog.ingen084.net/posts/2023-06-18-renew-again){:target="_blank" rel="noopener noreferrer"}をみて、見やすいテーマだなと思いました。
 
-他のテーマを探したい場合は[こちらの公式記事](https://jekyllrb.com/docs/themes/)で探すことができます。
+他のテーマを探したい場合は[こちらの公式記事](https://jekyllrb.com/docs/themes/){:target="_blank" rel="noopener noreferrer"}で探すことができます。
 必要な機能がある場合は、検索や生成AIを活用した方が角度の高い結果が得られるでしょう。
 
 ## 構築作業
@@ -154,9 +154,9 @@ Jekyllには数多くのテーマがあります。その中で多言語対応�
 
 ### 作業手順
 
-Mr.Green公式の[こちらの手順](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme/blob/main/README.md#github-pages)を参考にしました。
+Mr.Green公式の[こちらの手順](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme/blob/main/README.md#github-pages){:target="_blank" rel="noopener noreferrer"}を参考にしました。
 
-1. [Mr.Green公式リポジトリをFork](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme/fork)
+1. [Mr.Green公式リポジトリをFork](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme/fork){:target="_blank" rel="noopener noreferrer"}
 
 1. Forkした後、`_config.yml` の `url` を変更
 
@@ -164,15 +164,15 @@ Mr.Green公式の[こちらの手順](https://github.com/MrGreensWorkshop/MrGree
     - url: "https://your_github_user_name.github.io"
     + url: "https://takaakiu.github.io"
     ```
-    
-    → 実際に設定した`_config.yml`は[こちら](https://github.com/takaakiu/takaakiu.github.io/blob/main/_config.yml)
+
+    → 実際に設定した`_config.yml`は[こちら](https://github.com/takaakiu/takaakiu.github.io/blob/main/_config.yml){:target="_blank" rel="noopener noreferrer"}
 
 1. Forkしたリポジトリの名前を `takaakiu.github.io` に変更
     ここでの `takaakiu` は **GitHubのアカウント名** です。ご自身のアカウント名に置き換えて設定してください。
-    [参考情報：GitHubリポジトリ名の変更方法｜GitHub公式](https://docs.github.com/ja/repositories/creating-and-managing-repositories/renaming-a-repository)
+    [参考情報：GitHubリポジトリ名の変更方法｜GitHub公式](https://docs.github.com/ja/repositories/creating-and-managing-repositories/renaming-a-repository){:target="_blank" rel="noopener noreferrer"}
 
 1. Forkしたリポジトリの`Actions`タブにて自動的にデプロイが走ったことを確認
-    わたしのリポジトリのActionsは[こちら](https://github.com/TakaakiU/takaakiu.github.io/actions)。
+    わたしのリポジトリのActionsは[こちら](https://github.com/TakaakiU/takaakiu.github.io/actions){:target="_blank" rel="noopener noreferrer"}。
     けっこう時間がかかったと記憶しています。おそらく15分 ～ 20分ぐらいはかかったのではないでしょうか。気長に待ちましょう。
 
 1. 黄色の実行中 から 緑色のチェック になりデプロイが正常終了したことを確認
@@ -1578,6 +1578,6 @@ Fork元（Jekyllテーマ公式のリポジトリ） と Fork先（わたしの�
 
 ## 参考文献
 
-[GitHub Pagesを使って約10分で個人のWebサイトやブログを公開しよう！｜Mr.Green公式YouTube](https://youtu.be/Sd_KBUH5Lk4?si=6WrDanzMG_TiYmhk)
+[GitHub Pagesを使って約10分で個人のWebサイトやブログを公開しよう！｜Mr.Green公式YouTube](https://youtu.be/Sd_KBUH5Lk4?si=6WrDanzMG_TiYmhk){:target="_blank" rel="noopener noreferrer"}
 
-[Jekyllテーマ「Mr.Green」を使用して GitHub Pages サイトを作成｜Mr.Green公式](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme/blob/main/README.md#github-pages)
+[Jekyllテーマ「Mr.Green」を使用して GitHub Pages サイトを作成｜Mr.Green公式](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme/blob/main/README.md#github-pages){:target="_blank" rel="noopener noreferrer"}

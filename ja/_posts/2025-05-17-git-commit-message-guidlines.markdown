@@ -24,7 +24,7 @@ date: 2025-05-17 01:23:53 +0000
 #published: false
 ---
 
-[Gitのコミットメッセージの書き方 (2023年ver.)](https://zenn.dev/itosho/articles/git-commit-message-2023)を頻繁に参照するので、要約した内容を手元に残したいと思い、この記事を投稿。
+[Gitのコミットメッセージの書き方 (2023年ver.)](https://zenn.dev/itosho/articles/git-commit-message-2023){:target="_blank" rel="noopener noreferrer"}を頻繁に参照するので、要約した内容を手元に残したいと思い、この記事を投稿。
 
 以下より要約した内容の始まり。
 
@@ -46,7 +46,7 @@ date: 2025-05-17 01:23:53 +0000
 - **Type**
     - 各タイプごとに用途や意味が定められており、変更内容の分類が明確に分かるようにする。
     - コミットの種類を示す（例: `feat`, `fix`, `docs`, `chore`, `refactor`, `style`, `test`）
-        変更がどの種類のコミットなのか一目で分かるように、短いプレフィックスを記述してください。[Semantic Commit Messages](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716) と同様のカテゴリーを使用します。
+        変更がどの種類のコミットなのか一目で分かるように、短いプレフィックスを記述してください。[Semantic Commit Messages](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716){:target="_blank" rel="noopener noreferrer"} と同様のカテゴリーを使用します。
 
         - **chore:**  
         タスクファイルやビルド設定など、プロダクションコードに影響しない変更。

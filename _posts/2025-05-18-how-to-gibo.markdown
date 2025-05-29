@@ -1,7 +1,7 @@
 ---
 # multilingual page pair id, this must pair with translations of this page. (This name must be unique)
 lng_pair: id_how-to-gibo
-title: How to Gibo\!
+title: "How to Gibo!"
 
 # post specific
 author: TakaakiU
