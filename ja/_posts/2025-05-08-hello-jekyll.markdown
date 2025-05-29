@@ -193,6 +193,12 @@ Jekyllには数多くのテーマがあります。その中で多言語対応�
 
 ### カスタマイズ内容
 
+```diff
+- language_switch_lang_list: [en, ja, pt, fr, zh, ko, tr, es]
++ # language_switch_lang_list: [en, ja, pt, fr, zh, ko, tr, es]
++ language
+```
+
 <details markdown="1">
 
 <summary>▶ Fork元との差分（ここをクリックして折りたたみを開く）</summary>
