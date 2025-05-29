@@ -105,9 +105,11 @@ GitHub公式では上記のように記載。
 
 <details markdown="1">
 
-<summary>原文：GitHub Pages limits | GitHub公式（ここをクリックして折りたたみを開く）</summary>
+<summary>▶ 原文：GitHub Pages limits | GitHub公式（ここをクリックして折りたたみを開く）</summary>
 
-折りたたみ - ここから
+**折りたたみ - ここから**
+
+---
 
 ## Usage limits
 
@@ -133,7 +135,9 @@ GitHub Pages sites are subject to the following usage limits:
 
 If your site exceeds these usage quotas, we may not be able to serve your site, or you may receive a polite email from GitHub Support suggesting strategies for reducing your site's impact on our servers, including putting a third-party content distribution network (CDN) in front of your site, making use of other GitHub features such as releases, or moving to a different hosting service that might better fit your needs.
 
-折りたたみ - ここまで
+---
+
+**折りたたみ - ここまで**
 
 </details>
 
@@ -193,17 +197,23 @@ Jekyllには数多くのテーマがあります。その中で多言語対応�
 
 <details markdown="1">
 
-<summary>Fork元との差分（ここをクリックして折りたたみを開く）</summary>
+<summary>▶ Fork元との差分（ここをクリックして折りたたみを開く）</summary>
 
-折りたたみ - ここから
+**折りたたみ - ここから**
 
-```diff yml:_data/conf/main.yml
+---
+
+#### _data/conf/main.yml
+
+```diff:_data/conf/main.yml
 - language_switch_lang_list: [en, ja, pt, fr, zh, ko, tr, es]
 + # language_switch_lang_list: [en, ja, pt, fr, zh, ko, tr, es]
 + language_switch_lang_list: [en, ja]
 ```
 
-```diff yml:_data/content/projects/en.yml
+#### _data/content/projects/en.yml
+
+```diff:_data/content/projects/en.yml
 # you can move this content to front matter of [language]/tabs/projects.md
 ###########################################################
 #                Projects Page Data
@@ -464,7 +474,9 @@ page_data:
 
 ```
 
-```diff yml:_data/content/projects/ja.yml
+#### _data/content/projects/ja.yml
+
+```diff:_data/content/projects/ja.yml
 # you can move this content to front matter of [language]/tabs/projects.md
 ###########################################################
 #                Projects Page Data
@@ -725,7 +737,9 @@ page_data:
         Be the change that you wish to see in the world.
 ```
 
-```diff yml:_data/lang/en.yml
+#### _data/lang/en.yml
+
+```diff:_data/lang/en.yml
 # Mr. Green Jekyll Theme (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
 # Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com
 # Licensed under MIT
@@ -973,7 +987,9 @@ cookie_consent:
 
 ```
 
-```diff yml:_data/lang/ja.yml
+#### _data/lang/ja.yml
+
+```diff:_data/lang/ja.yml
 # Mr. Green Jekyll Theme (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
 # Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com
 # Licensed under MIT
@@ -1221,7 +1237,9 @@ cookie_consent:
 
 ```
 
-```diff yml:_data/owner/en.yml
+#### _data/owner/en.yml
+
+```diff:_data/owner/en.yml
 ###########################################################
 # Owner's Personal Information
 ###########################################################
@@ -1325,8 +1343,9 @@ google_forms_contact_form_url: ""
 
 ```
 
+#### _data/owner/ja.yml
 
-```diff yml:_data/owner/ja.yml
+```diff:_data/owner/ja.yml
 ###########################################################
 # Owner's Personal Information
 ###########################################################
@@ -1430,7 +1449,9 @@ google_forms_contact_form_url: ""
 
 ```
 
-```diff yml:_config.yml
+#### _config.yml
+
+```diff:_config.yml
 ###########################################################
 # Global Configuration (https://jekyllrb.com/docs/configuration/options/)
 ###########################################################
@@ -1557,7 +1578,9 @@ exclude: ["Gemfile*", "vendor", ".github", ".vscode", "README*", "CODE_OF_CONDUC
 
 ```
 
-折りたたみ - ここまで
+----
+
+**折りたたみ - ここまで**
 
 </details>
 
