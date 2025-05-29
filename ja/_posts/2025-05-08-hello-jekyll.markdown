@@ -11,7 +11,7 @@ category: blog
 # multiple tag entries are possible
 tags: [jekyll, github]
 # thumbnail image for post
-img: ":post_pic1.jpg"
+img: ":post_tech.jpg"
 # disable comments on this page
 #comments_disable: true
 
@@ -205,7 +205,7 @@ Jekyllには数多くのテーマがあります。その中で多言語対応�
 
 #### _data/conf/main.yml
 
-```diff:_data/conf/main.yml
+```diff
 - language_switch_lang_list: [en, ja, pt, fr, zh, ko, tr, es]
 + # language_switch_lang_list: [en, ja, pt, fr, zh, ko, tr, es]
 + language_switch_lang_list: [en, ja]
