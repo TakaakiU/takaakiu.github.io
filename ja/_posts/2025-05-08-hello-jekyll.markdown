@@ -160,33 +160,33 @@ Mr.Green公式の[こちらの手順](https://github.com/MrGreensWorkshop/MrGree
 
 1. Forkした後、`_config.yml` の `url` を変更
 
-    ```diff
-    - url: "https://your_github_user_name.github.io"
-    + url: "https://takaakiu.github.io"
-    ```
-        
-    → 実際に設定した`_config.yml`は[こちら](https://github.com/takaakiu/takaakiu.github.io/blob/main/_config.yml){:target="_blank" rel="noopener noreferrer"}
+  ```diff
+  - url: "https://your_github_user_name.github.io"
+  + url: "https://takaakiu.github.io"
+  ```
+
+  → 実際に設定した`_config.yml`は[こちら](https://github.com/takaakiu/takaakiu.github.io/blob/main/_config.yml){:target="_blank" rel="noopener noreferrer"}
 
 1. Forkしたリポジトリの名前を `takaakiu.github.io` に変更
 
-    ここでの `takaakiu` は **GitHubのアカウント名** です。ご自身のアカウント名に置き換えて設定してください。
-    [参考情報：GitHubリポジトリ名の変更方法｜GitHub公式](https://docs.github.com/ja/repositories/creating-and-managing-repositories/renaming-a-repository){:target="_blank" rel="noopener noreferrer"}
+  ここでの `takaakiu` は **GitHubのアカウント名** です。ご自身のアカウント名に置き換えて設定してください。
+  [参考情報：GitHubリポジトリ名の変更方法｜GitHub公式](https://docs.github.com/ja/repositories/creating-and-managing-repositories/renaming-a-repository){:target="_blank" rel="noopener noreferrer"}
 
 1. Forkしたリポジトリの`Actions`タブにて自動的にデプロイが走ったことを確認
 
-    わたしのリポジトリのActionsは[こちら](https://github.com/TakaakiU/takaakiu.github.io/actions){:target="_blank" rel="noopener noreferrer"}。
-    けっこう時間がかかったと記憶しています。おそらく15分 ～ 20分ぐらいはかかったのではないでしょうか。気長に待ちましょう。
+  わたしのリポジトリのActionsは[こちら](https://github.com/TakaakiU/takaakiu.github.io/actions){:target="_blank" rel="noopener noreferrer"}。
+  けっこう時間がかかったと記憶しています。おそらく15分 ～ 20分ぐらいはかかったのではないでしょうか。気長に待ちましょう。
 
 1. 黄色の実行中 から 緑色のチェック になりデプロイが正常終了したことを確認
 
 1. 下記のURLに接続可能か確認
 
-    URLは、`https://takaakiu.github.io`。URL内の `takaakiu` は **GitHubのアカウント名** です。ご自身のアカウント名に置き換えて設定してください。
+  URLは、`https://takaakiu.github.io`。URL内の `takaakiu` は **GitHubのアカウント名** です。ご自身のアカウント名に置き換えて設定してください。
 
 1. これで準備完了！
 
-    あとはご自身の運用に合わせてカスタマイズしてください。
-    参考までに私が変更した内容を下記に共有します。
+  あとはご自身の運用に合わせてカスタマイズしてください。
+  参考までに私が変更した内容を下記に共有します。
 
 ### カスタマイズ内容（2025年5月7日時点）
 
