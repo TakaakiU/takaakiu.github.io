@@ -107,6 +107,8 @@ GitHub公式では上記のように記載。
 
 <summary>原文：GitHub Pages limits | GitHub公式（ここをクリックして折りたたみを開く）</summary>
 
+折りたたみ - ここから
+
 ## Usage limits
 
 GitHub Pages is not intended for or allowed to be used as a free web-hosting service to run your online business, e-commerce site, or any other website that is primarily directed at either facilitating commercial transactions or providing commercial software as a service (SaaS). GitHub Pages sites shouldn't be used for sensitive transactions like sending passwords or credit card numbers.
@@ -130,6 +132,8 @@ GitHub Pages sites are subject to the following usage limits:
 - In order to provide consistent quality of service for all GitHub Pages sites, rate limits may apply. These rate limits are not intended to interfere with legitimate uses of GitHub Pages. If your request triggers rate limiting, you will receive an appropriate response with an HTTP status code of `429`, along with an informative HTML body.
 
 If your site exceeds these usage quotas, we may not be able to serve your site, or you may receive a polite email from GitHub Support suggesting strategies for reducing your site's impact on our servers, including putting a third-party content distribution network (CDN) in front of your site, making use of other GitHub features such as releases, or moving to a different hosting service that might better fit your needs.
+
+折りたたみ - ここまで
 
 </details>
 
@@ -187,11 +191,11 @@ Jekyllには数多くのテーマがあります。その中で多言語対応�
 
 ### カスタマイズ内容
 
-<details>
+<details markdown="1">
 
 <summary>Fork元との差分（ここをクリックして折りたたみを開く）</summary>
 
-<p>
+折りたたみ - ここから
 
 ```diff yml:_data/conf/main.yml
 - language_switch_lang_list: [en, ja, pt, fr, zh, ko, tr, es]
@@ -1553,7 +1557,7 @@ exclude: ["Gemfile*", "vendor", ".github", ".vscode", "README*", "CODE_OF_CONDUC
 
 ```
 
-</p>
+折りたたみ - ここまで
 
 </details>
 
