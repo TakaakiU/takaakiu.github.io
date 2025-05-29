@@ -50,30 +50,21 @@ Jekyllのテーマは、多言語対応している「**[Mr. Green](https://gith
 
 ### GitHub Pages
 
+「GitHub Pagesを使用すると、GitHub上のリポジトリを元にしてWebサイトを公開できる。」というもの。
+
+しかも**無料プランでも費用が発生する事なく利用可能**。GitHubさん、ふとっぱら。
+　
+<details markdown="1">
+
+<summary>▶ 原文：What is GitHub Pages? | GitHub公式（ここをクリックして折りたたみを開く）</summary>
+
 > You can use GitHub Pages to host a website about yourself, your organization, or your project directly from a repository on GitHub.
 >
 > 引用元：[What is GitHub Pages?](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) より
 
-GitHub公式では上記のように記載。
-つまり、「GitHub Pagesを使用すると、GitHub上のリポジトリを元にしてWebサイトを公開できる。」
-
-しかも**無料プランでも費用が発生する事なく利用可能**。GitHubさん、ふとっぱら。
+</details>
 
 #### 使用制限
-
-> GitHub Pages sites are subject to the following usage limits:
->
-> - You can only create one user or organization site for each account on GitHub.
-> - GitHub Pages source repositories have a recommended limit of 1 GB. For more information, see [About large files on GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#file-and-repository-size-limitations).
-> - Published GitHub Pages sites may be no larger than 1 GB.
-> - GitHub Pages deployments will timeout if they take longer than 10 minutes.
-> - GitHub Pages sites have a soft bandwidth limit of 100 GB per month.
-> - GitHub Pages sites have a soft limit of 10 builds per hour. This limit does not apply if you build and publish your site with a custom GitHub Actions workflow.
-> - In order to provide consistent quality of service for all GitHub Pages sites, rate limits may apply. These rate limits are not intended to interfere with legitimate uses of GitHub Pages. If your request triggers rate limiting, you will receive an appropriate response with an HTTP status code of 429, along with an informative HTML body.
->
-> 引用元：[GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)
-
-翻訳すると下記のとおり。
 
 > GitHub Pagesのサイトには、以下の使用制限が適用されます：
 >
@@ -107,35 +98,21 @@ GitHub公式では上記のように記載。
 
 <summary>▶ 原文：GitHub Pages limits | GitHub公式（ここをクリックして折りたたみを開く）</summary>
 
-**折りたたみ - ここから**
+**↓↓↓ 折りたたみ - ここから ↓↓↓**
 
-```
-## Usage limits
+> GitHub Pages sites are subject to the following usage limits:
+>
+> - You can only create one user or organization site for each account on GitHub.
+> - GitHub Pages source repositories have a recommended limit of 1 GB. For more information, see [About large files on GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#file-and-repository-size-limitations).
+> - Published GitHub Pages sites may be no larger than 1 GB.
+> - GitHub Pages deployments will timeout if they take longer than 10 minutes.
+> - GitHub Pages sites have a soft bandwidth limit of 100 GB per month.
+> - GitHub Pages sites have a soft limit of 10 builds per hour. This limit does not apply if you build and publish your site with a custom GitHub Actions workflow.
+> - In order to provide consistent quality of service for all GitHub Pages sites, rate limits may apply. These rate limits are not intended to interfere with legitimate uses of GitHub Pages. If your request triggers rate limiting, you will receive an appropriate response with an HTTP status code of 429, along with an informative HTML body.
+>
+> 引用元：[GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)
 
-GitHub Pages is not intended for or allowed to be used as a free web-hosting service to run your online business, e-commerce site, or any other website that is primarily directed at either facilitating commercial transactions or providing commercial software as a service (SaaS). GitHub Pages sites shouldn't be used for sensitive transactions like sending passwords or credit card numbers.
-
-In addition, your use of GitHub Pages is subject to the [GitHub Terms of Service](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service), including the restrictions on get-rich-quick schemes, sexually obscene content, and violent or threatening content or activity.
-
-GitHub Pages sites are subject to the following usage limits:
-
-- You can only create one user or organization site for each account on GitHub.
-
-- GitHub Pages source repositories have a recommended limit of 1 GB. For more information, see [About large files on GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#file-and-repository-size-limitations).
-
-- Published GitHub Pages sites may be no larger than 1 GB.
-
-- GitHub Pages deployments will timeout if they take longer than 10 minutes.
-
-- GitHub Pages sites have a soft bandwidth limit of 100 GB per month.
-
-- GitHub Pages sites have a soft limit of 10 builds per hour. This limit does not apply if you build and publish your site with a custom GitHub Actions workflow.
-
-- In order to provide consistent quality of service for all GitHub Pages sites, rate limits may apply. These rate limits are not intended to interfere with legitimate uses of GitHub Pages. If your request triggers rate limiting, you will receive an appropriate response with an HTTP status code of `429`, along with an informative HTML body.
-
-If your site exceeds these usage quotas, we may not be able to serve your site, or you may receive a polite email from GitHub Support suggesting strategies for reducing your site's impact on our servers, including putting a third-party content distribution network (CDN) in front of your site, making use of other GitHub features such as releases, or moving to a different hosting service that might better fit your needs.
-```
-
-**折りたたみ - ここまで**
+**↑↑↑ 折りたたみ - ここまで ↑↑↑**
 
 </details>
 
@@ -164,58 +141,68 @@ Jekyllには数多くのテーマがあります。その中で多言語対応�
 他のテーマを探したい場合は[こちらの公式記事](https://jekyllrb.com/docs/themes/)から色々なテーマを探すことができます。
 必要な機能がある場合は、検索するなり生成AIに質問するになりした方が角度の高い結果が得られるでしょう。
 
+## 構築作業
 
-## 前提条件
+### 前提条件
 
 - GitHubアカウント作成済み
 - インターネット環境に接続していること
 
-## 構築手順
+### 作業手順
 
-1. Fork the repo.
+Mr.Green公式の[こちらの手順](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme/blob/main/README.md#github-pages)を参考にしました。
 
-1. Edit _config.yml and change `url` like below and push changes.
+1. [Mr.Green公式リポジトリをFork](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme/fork)
 
+1. Forkした後、`_config.yml` の `url` を変更
+
+    ```diff
+    - url: "https://your_github_user_name.github.io"
+    + url: "https://takaakiu.github.io"
     ```
-    url: "https://your_github_user_name.github.io"
-    ```
 
-    → [実際に設定した`_config.yml`](https://github.com/takaakiu/takaakiu.github.io/blob/main/_config.yml)
+    → 実際に設定した`_config.yml`は[こちら](https://github.com/takaakiu/takaakiu.github.io/blob/main/_config.yml)
 
-1. Rename the repo name to `your_github_user_name.github.io`.
+1. Forkしたリポジトリの名前を `takaakiu.github.io` に変更
+    ここでの `takaakiu` は **GitHubのアカウント名** です。ご自身のアカウント名に置き換えて設定してください。
+    [参考情報：GitHubリポジトリ名の変更方法｜GitHub公式](https://docs.github.com/ja/repositories/creating-and-managing-repositories/renaming-a-repository)
 
-1. Check Deploy status `Actions` tab on the repo.
+1. Forkしたリポジトリの`Actions`タブにて自動的にデプロイが走ったことを確認
+    わたしのリポジトリのActionsは[こちら](https://github.com/TakaakiU/takaakiu.github.io/actions)。
 
-1. When it's turned to green, your site is up and running at
-    `https://your_github_user_name.github.io`.
+1. 黄色の実行中 から 緑色のチェック になりデプロイが正常終了したことを確認
 
-1. 自身のリポジトリを修正しカスタマイズ
+1. 下記のURLに接続可能か確認
+    URLは、`https://takaakiu.github.io`。URL内の `takaakiu` は **GitHubのアカウント名** です。ご自身のアカウント名に置き換えて設定してください。
 
-### カスタマイズ内容
+1. これで準備完了！
+    あとはご自身の運用に合わせてカスタマイズしてください。
+    参考までに私が変更した内容を下記に共有します。
 
-```diff
-- language_switch_lang_list: [en, ja, pt, fr, zh, ko, tr, es]
-+ # language_switch_lang_list: [en, ja, pt, fr, zh, ko, tr, es]
-+ language
-```
+### カスタマイズ内容（2025年5月7日時点）
+
+Fork元（Jekyllテーマ公式のリポジトリ） と Fork先（わたしのリポジトリ）の差分を取得しました。
+基本的には英語と日本語のみとし、他は細かい見た目を変更しているという感じです。
+
+詳細は下記の **折りたたみを表示** してご覧ください。
 
 <details markdown="1">
 
 <summary>▶ Fork元との差分（ここをクリックして折りたたみを開く）</summary>
 
-**折りたたみ - ここから**
+**↓↓↓ 折りたたみ - ここから ↓↓↓**
 
-#### _data/conf/main.yml
+- **_data/conf/main.yml**
 
-```diff
-- language_switch_lang_list: [en, ja, pt, fr, zh, ko, tr, es]
-+ # language_switch_lang_list: [en, ja, pt, fr, zh, ko, tr, es]
-+ language_switch_lang_list: [en, ja]
-```
+  ```diff
+  - language_switch_lang_list: [en, ja, pt, fr, zh, ko, tr, es]
+  + # language_switch_lang_list: [en, ja, pt, fr, zh, ko, tr, es]
+  + language_switch_lang_list: [en, ja]
+  ```
 
 #### _data/content/projects/en.yml
 
-```diff:_data/content/projects/en.yml
+```diff
 # you can move this content to front matter of [language]/tabs/projects.md
 ###########################################################
 #                Projects Page Data
@@ -478,7 +465,7 @@ page_data:
 
 #### _data/content/projects/ja.yml
 
-```diff:_data/content/projects/ja.yml
+```diff
 # you can move this content to front matter of [language]/tabs/projects.md
 ###########################################################
 #                Projects Page Data
@@ -741,7 +728,7 @@ page_data:
 
 #### _data/lang/en.yml
 
-```diff:_data/lang/en.yml
+```diff
 # Mr. Green Jekyll Theme (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
 # Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com
 # Licensed under MIT
@@ -991,7 +978,7 @@ cookie_consent:
 
 #### _data/lang/ja.yml
 
-```diff:_data/lang/ja.yml
+```diff
 # Mr. Green Jekyll Theme (https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme)
 # Copyright (c) 2022 Mr. Green's Workshop https://www.MrGreensWorkshop.com
 # Licensed under MIT
@@ -1241,7 +1228,7 @@ cookie_consent:
 
 #### _data/owner/en.yml
 
-```diff:_data/owner/en.yml
+```diff
 ###########################################################
 # Owner's Personal Information
 ###########################################################
@@ -1347,7 +1334,7 @@ google_forms_contact_form_url: ""
 
 #### _data/owner/ja.yml
 
-```diff:_data/owner/ja.yml
+```diff
 ###########################################################
 # Owner's Personal Information
 ###########################################################
@@ -1453,7 +1440,7 @@ google_forms_contact_form_url: ""
 
 #### _config.yml
 
-```diff:_config.yml
+```diff
 ###########################################################
 # Global Configuration (https://jekyllrb.com/docs/configuration/options/)
 ###########################################################
@@ -1580,7 +1567,7 @@ exclude: ["Gemfile*", "vendor", ".github", ".vscode", "README*", "CODE_OF_CONDUC
 
 ```
 
-**折りたたみ - ここまで**
+**↑↑↑ 折りたたみ - ここまで ↑↑↑**
 
 </details>
 
