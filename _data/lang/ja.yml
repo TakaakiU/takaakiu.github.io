@@ -75,8 +75,8 @@ post:
   pager_buttons:
     older_post: "👈 古い記事へ"
     newer_post: "新しい記事へ 👉"
-    first_post: First
-    last_post: Last
+    first_post: "<<"
+    last_post: ">>"
   comments:
     noscript: コメントを表示するには、JavaScriptを有効にしてください。
     disqus:
