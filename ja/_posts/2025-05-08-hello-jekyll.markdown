@@ -103,11 +103,9 @@ GitHub公式では上記のように記載。
 >
 > 引用元：[GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)
 
-<details>
+<details markdown="1">
 
 <summary>原文：GitHub Pages limits | GitHub公式（ここをクリックして折りたたみを開く）</summary>
-
-<p>
 
 ## Usage limits
 
@@ -132,8 +130,6 @@ GitHub Pages sites are subject to the following usage limits:
 - In order to provide consistent quality of service for all GitHub Pages sites, rate limits may apply. These rate limits are not intended to interfere with legitimate uses of GitHub Pages. If your request triggers rate limiting, you will receive an appropriate response with an HTTP status code of `429`, along with an informative HTML body.
 
 If your site exceeds these usage quotas, we may not be able to serve your site, or you may receive a polite email from GitHub Support suggesting strategies for reducing your site's impact on our servers, including putting a third-party content distribution network (CDN) in front of your site, making use of other GitHub features such as releases, or moving to a different hosting service that might better fit your needs.
-
-</p>
 
 </details>
 
