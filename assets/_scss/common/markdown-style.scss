@@ -139,6 +139,14 @@
   font-size: 1.4rem;
 }
 
+/* Add diff-view */
+.markdown-style .highlight .gi {
+  color: #38a745;
+}
+.markdown-style .highlight .gd {
+  color: #d73a49;
+}
+
 /* code */
 .markdown-style pre > code {
   background-color: var(--markdown-styles-code-background-color);
