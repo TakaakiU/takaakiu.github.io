@@ -140,11 +140,12 @@
 }
 
 /* Add diff-view */
-.highlight .gi {
-  color: #38a745;
-}
-.highlight .gd {
+.language-diff .highlight .gd {
   color: #d73a49;
+}
+
+.language-diff .highlight .gi {
+  color: #28a745;
 }
 
 /* code */
