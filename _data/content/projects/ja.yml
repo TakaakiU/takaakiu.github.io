@@ -33,7 +33,7 @@ page_data:
       post: |
         # NITAKU（二択）
 
-        https://github.com/TakaakiU/nitaku-local/blob/main/docs/NITAKU_Demo.webp![NITAKUアプリのデモ動画](https://github.com/TakaakiU/nitaku-local/blob/main/docs/NITAKU_Demo.webp)
+        ![NITAKUアプリのデモ動画](https://raw.githubusercontent.com/TakaakiU/nitaku-local/refs/heads/main/docs/NITAKU_Demo.webp)
         *開発中の画面*
 
         ## 概要
@@ -189,8 +189,6 @@ page_data:
       post: |
         # Title
         This is project content.
-
-        ![Image](:project2_thumb.jpg)
 
     # notices
     - type: id_notices
