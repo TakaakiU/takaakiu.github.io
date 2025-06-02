@@ -115,7 +115,9 @@ GitHub Pages sites are subject to the following usage limits:
 ```
 
 </details>
-　
+
+---
+
 いろいろ制限はありますが、個人の簡易なサイトでは問題なく運用できそうです。
 
 ### Jekyll
@@ -154,7 +156,7 @@ Mr.Green公式の[こちらの手順](https://github.com/MrGreensWorkshop/MrGree
 
 1. [Mr.Green公式リポジトリをFork](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme/fork){:target="_blank" rel="noopener noreferrer"}
 
-1. Forkした後、`_config.yml` の `url` を変更
+2. Forkした後、`_config.yml` の `url` を変更
 
   ```diff
   - url: "https://your_github_user_name.github.io"
@@ -163,23 +165,23 @@ Mr.Green公式の[こちらの手順](https://github.com/MrGreensWorkshop/MrGree
 
   → 実際に設定した`_config.yml`は[こちら](https://github.com/takaakiu/takaakiu.github.io/blob/main/_config.yml){:target="_blank" rel="noopener noreferrer"}
 
-1. Forkしたリポジトリの名前を `takaakiu.github.io` に変更
+3. Forkしたリポジトリの名前を `takaakiu.github.io` に変更
 
   ここでの `takaakiu` は **GitHubのアカウント名** です。ご自身のアカウント名に置き換えて設定してください。
   [参考情報：GitHubリポジトリ名の変更方法｜GitHub公式](https://docs.github.com/ja/repositories/creating-and-managing-repositories/renaming-a-repository){:target="_blank" rel="noopener noreferrer"}
 
-1. Forkしたリポジトリの`Actions`タブにて自動的にデプロイが走ったことを確認
+4. Forkしたリポジトリの`Actions`タブにて自動的にデプロイが走ったことを確認
 
   わたしのリポジトリのActionsは[こちら](https://github.com/TakaakiU/takaakiu.github.io/actions){:target="_blank" rel="noopener noreferrer"}。
   けっこう時間がかかったと記憶しています。おそらく15分 ～ 20分ぐらいはかかったのではないでしょうか。気長に待ちましょう。
 
-1. 黄色の実行中 から 緑色のチェック になりデプロイが正常終了したことを確認
+5. 黄色の実行中 から 緑色のチェック になりデプロイが正常終了したことを確認
 
-1. 下記のURLに接続可能か確認
+6. 下記のURLに接続可能か確認
 
   URLは、`https://takaakiu.github.io`。URL内の `takaakiu` は **GitHubのアカウント名** です。ご自身のアカウント名に置き換えて設定してください。
 
-1. これで準備完了！
+7. これで準備完了！
 
   あとはご自身の運用に合わせてカスタマイズしてください。
   参考までに私が変更した内容を下記に共有します。
@@ -1571,6 +1573,19 @@ Fork元（Jekyllテーマ公式のリポジトリ） と Fork先（わたしの�
   ```
 
 </details>
+
+## まとめ
+
+- このサイトは下記の技術で立ち上げ
+  - GitHub Pages
+    GitHubリポジトリを基に静的ウェブサイトを無料で公開できるサービス。設定不要で自動デプロイが可能なため、個人サイトやブログに最適。
+  - Jekyll
+    MarkdownやHTMLファイルを静的ウェブサイトに変換するツール。GitHub Pagesが公式にサポートしていることもあり連携が非常に良い。
+    リポジトリにプッシュするだけでサイトが簡単に公開可能。シンプルかつ高速なウェブ構築に最適。
+  - Jekyll テーマ「Mr. Green」
+    開発者のお名前を見つけることができませんでしたが、[@MrGreensWorkshop](https://github.com/MrGreensWorkshop) さんが開発したJekyllのテーマ。
+    2022年にリリースされており、多言語の対応が可能。公式のリポジトリにない言語もユーザーで追加することが可能。
+    まだ試していないが設定ファイルをみるとGoogle AnalyticsやGoogle Search Consoleとも連携が可能だと思われる。
 
 ## 参考文献
 
