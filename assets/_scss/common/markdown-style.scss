@@ -196,12 +196,24 @@
 }
 
 /* TakaakiU Add details-view */
+.markdown-style :root {
+  --background-color: #f9f9f9; /* ライトモード背景色 */
+  --border-color: #ddd;        /* ライトモードボーダー色 */
+}
+
+@media (prefers-color-scheme: dark) {
+  .markdown-style :root {
+    --background-color: #333; /* ダークモード背景色 */
+    --border-color: #555;     /* ダークモードボーダー色 */
+  }
+}
+
 .markdown-style .details {
   margin: 1rem 0;
   padding: 0.5rem;
-  border: 1px solid;
+  border: 1px solid var(--border-color);
   border-radius: 4px;
-  // background-color: var(--background-color);
+  background-color: var(--background-color);
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
