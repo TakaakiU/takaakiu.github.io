@@ -206,27 +206,18 @@
 
 .markdown-style details[open] {
   border-style: none none none double;
-  // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);
 }
 
-// .markdown-style .summary {
-//   cursor: pointer;
-//   font-weight: bold;
-//   display: flex;
-//   align-items: center;
-//   padding: 0.5rem;
-//   border-radius: 4px;
-//   transition: transform 0.3s ease;
-// }
+.markdown-style .summary {
+  font-weight: bold;
+}
 
 .markdown-style summary::before {
   content: "→";  /* 閉じている状態を示すアイコン */
   margin-right: 0.5rem;
-  // transition: transform 0.3s ease;
 }
 
 .markdown-style details[open] summary::before {
   content: "↓";  /* 開いている状態を示すアイコン */
-  // transform: rotate(90deg);
 }
