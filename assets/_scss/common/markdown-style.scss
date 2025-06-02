@@ -210,11 +210,11 @@
 }
 
 .markdown-style summary::before {
-  content: "<strong>[ + Show ]</<strong>>";  /* 閉じている状態を示すアイコン */
+  content: "[ + Show ]";  /* 閉じている状態を示すアイコン */
   font-weight: bold;
 }
 
 .markdown-style details[open] summary::before {
-  content: "<strong>[ - Hide ]</strong>";  /* 開いている状態を示すアイコン */
+  content: "[ - Hide ]";  /* 開いている状態を示すアイコン */
   font-weight: bold;
 }
