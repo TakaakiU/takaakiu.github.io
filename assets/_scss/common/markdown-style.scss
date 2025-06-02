@@ -196,7 +196,7 @@
 }
 
 /* TakaakiU Add details-view */
-.markdown-style .details {
+.multipurpose-container .markdown-style .details {
   margin: 1rem 0;
   padding: 0.5rem;
   border: 1px solid var(--markdown-styles-details-border-color);
@@ -205,20 +205,20 @@
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.markdown-style .summary {
+.multipurpose-container .markdown-style .summary {
   cursor: pointer;
   font-weight: bold;
   display: flex;
   align-items: center;
 }
 
-.markdown-style summary::before {
+.multipurpose-container .markdown-style summary::before {
   content: "→"; /* 折りたたみを閉じている状態 */
   margin-right: 0.5rem;
   transition: transform 0.3s ease;
 }
 
-.markdown-style details[open] summary::before {
+.multipurpose-container .markdown-style details[open] summary::before {
   content: "↓"; /* 折りたたみが開いている状態 */
   transform: rotate(90deg);
 }
