@@ -191,6 +191,109 @@ Mr.Green公式の[こちらの手順](https://github.com/MrGreensWorkshop/MrGree
 Fork元（Jekyllテーマ公式のリポジトリ） と Fork先（わたしのリポジトリ）の差分を取得しました。
 基本的には英語と日本語のみとし、他は細かい見た目を変更しているという感じです。
 
+|**名前**|**フォルダー**|**比較結果**|**拡張子**|
+|---|---|---|---|
+|.github||同一||
+|_data||フォルダーは異なっています||
+|conf|_data|フォルダーは異なっています||
+|main.yml|_data\conf|テキスト ファイルは異なります|yml|
+|others.yml|_data\conf|テキスト ファイルは同一です|yml|
+|posts.yml|_data\conf|テキスト ファイルは同一です|yml|
+|const|_data|同一||
+|content|_data|フォルダーは異なっています||
+|projects|_data\content|フォルダーは異なっています||
+|en.yml|_data\content\projects|テキスト ファイルは異なります|yml|
+|~~es.yml~~|_data\content\projects|Fork先で削除|yml|
+|~~fr.yml~~|_data\content\projects|Fork先で削除|yml|
+|ja.yml|_data\content\projects|テキスト ファイルは異なります|yml|
+|~~ko.yml~~|_data\content\projects|Fork先で削除|yml|
+|~~pt.yml~~|_data\content\projects|Fork先で削除|yml|
+|~~tr.yml~~|_data\content\projects|Fork先で削除|yml|
+|~~zh.yml~~|_data\content\projects|Fork先で削除|yml|
+|lang|_data|フォルダーは異なっています||
+|en.yml|_data\lang|テキスト ファイルは異なります|yml|
+|~~es.yml~~|_data\lang|Fork先で削除|yml|
+|~~fr.yml~~|_data\lang|Fork先で削除|yml|
+|ja.yml|_data\lang|テキスト ファイルは異なります|yml|
+|~~ko.yml~~|_data\lang|Fork先で削除|yml|
+|~~pt.yml~~|_data\lang|Fork先で削除|yml|
+|~~tr.yml~~|_data\lang|Fork先で削除|yml|
+|~~zh.yml~~|_data\lang|Fork先で削除|yml|
+|owner|_data|フォルダーは異なっています||
+|en.yml|_data\owner|テキスト ファイルは異なります|yml|
+|~~es.yml~~|_data\owner|Fork先で削除|yml|
+|~~fr.yml~~|_data\owner|Fork先で削除|yml|
+|ja.yml|_data\owner|テキスト ファイルは異なります|yml|
+|~~ko.yml~~|_data\owner|Fork先で削除|yml|
+|~~pt.yml~~|_data\owner|Fork先で削除|yml|
+|~~tr.yml~~|_data\owner|Fork先で削除|yml|
+|~~zh.yml~~|_data\owner|Fork先で削除|yml|
+|_includes||同一||
+|_layouts||同一||
+|_posts||フォルダーは異なっています||
+|~~2021-08-10-Test-page1.markdown~~|_posts|Fork先で削除|markdown|
+|~~2021-08-11-Test-page2.markdown~~|_posts|Fork先で削除|markdown|
+|~~2021-09-12-Test-page3.markdown~~|_posts|Fork先で削除|markdown|
+|~~2021-09-13-Test-page4.markdown~~|_posts|Fork先で削除|markdown|
+|~~2021-10-14-Test-page5.markdown~~|_posts|Fork先で削除|markdown|
+|~~2021-10-15-Test-page6.markdown~~|_posts|Fork先で削除|markdown|
+|~~2021-11-16-Test-page7.markdown~~|_posts|Fork先で削除|markdown|
+|~~2022-01-01-welcome-to-jekyll.markdown~~|_posts|Fork先で削除|markdown|
+|2022-02-10-Examples.markdown|_posts|テキスト ファイルは異なります|markdown|
+|~~2025-05-08-hello-jekyll.markdown~~|_posts|Fork先で削除|markdown|
+|~~2025-05-17-git-commit-message-guidlines.markdown~~|_posts|Fork先で削除|markdown|
+|~~2025-05-18-how-to-gibo.markdown~~|_posts|Fork先で削除|markdown|
+|~~_scripts~~||Fork先で削除||
+|assets||フォルダーは異なっています||
+|_scss|assets|同一||
+|css|assets|同一||
+|fonts|assets|同一||
+|img|assets|フォルダーは異なっています||
+|about|assets\img|フォルダーは異なっています||
+|about.jpg|assets\img\about|バイナリ ファイルは異なっています|jpg|
+|default|assets\img|フォルダーは異なっています||
+|cc|assets\img\default|同一||
+|1x1px.png|assets\img\default|バイナリ ファイルは同一です|png|
+|mastodon.svg|assets\img\default|テキスト ファイルは同一です|svg|
+|profile_pic.jpg|assets\img\default|バイナリ ファイルは異なっています|jpg|
+|favicons|assets\img|フォルダーは異なっています||
+|~~android-chrome-192x192.png~~|assets\img\favicons|Fork先で削除|png|
+|~~android-chrome-512x512.png~~|assets\img\favicons|Fork先で削除|png|
+|apple-touch-icon.png|assets\img\favicons|バイナリ ファイルは異なっています|png|
+|favicon.ico|assets\img\favicons|バイナリ ファイルは異なっています|ico|
+|favicon.svg|assets\img\favicons|Fork先で追加|svg|
+|~~favicon-16x16.png~~|assets\img\favicons|Fork先で削除|png|
+|~~favicon-32x32.png~~|assets\img\favicons|Fork先で削除|png|
+|favicon-96x96.png|assets\img\favicons|Fork先で追加|png|
+|~~mstile-150x150.png~~|assets\img\favicons|Fork先で削除|png|
+|web-app-manifest-192x192.png|assets\img\favicons|Fork先で追加|png|
+|web-app-manifest-512x512.png|assets\img\favicons|Fork先で追加|png|
+|home|assets\img|フォルダーは異なっています||
+|home-heading.jpg|assets\img\home|バイナリ ファイルは異なっています|jpg|
+|posts|assets\img|フォルダーは異なっています||
+|mock1.jpg|assets\img\posts|バイナリ ファイルは同一です|jpg|
+|post_idea.jpg|assets\img\posts|Fork先で追加|jpg|
+|post_pic1.jpg|assets\img\posts|バイナリ ファイルは同一です|jpg|
+|post_pic2.jpg|assets\img\posts|バイナリ ファイルは同一です|jpg|
+|post_pic3.jpg|assets\img\posts|バイナリ ファイルは同一です|jpg|
+|post_tech.jpg|assets\img\posts|Fork先で追加|jpg|
+|projects|assets\img|フォルダーは異なっています||
+|project1_thumb.jpg|assets\img\projects|バイナリ ファイルは同一です|jpg|
+|project2_thumb.jpg|assets\img\projects|バイナリ ファイルは同一です|jpg|
+|projects-heading.jpg|assets\img\projects|バイナリ ファイルは異なっています|jpg|
+|js|assets|同一||
+|browserconfig.xml|assets|テキスト ファイルは同一です|xml|
+|manifest.json|assets|テキスト ファイルは同一です|json|
+|sitemap.xml|assets|テキスト ファイルは同一です|xml|
+|~~es~~||Fork先で削除||
+|~~fr~~||Fork先で削除||
+|ja||フォルダーは異なっています||
+|_posts|ja|フォルダーは異なっています||
+|~~2021-08-10-Test-page1.markdown~~|ja\_posts|Fork先で削除|markdown|
+|~~2021-08-11-Test-page2.markdown~~|ja\_posts|Fork先で削除|markdown|
+|~~2021-09-12-Test-page3.markdown~~|ja\_posts|Fork先で削除|markdown|
+|~~2021-09-13-Test-page4.markdown~~|ja\_posts|Fork先で削除|markdown|
+
 詳細は下記の **折りたたみを表示** してご覧ください。
 
 <details markdown="1">
