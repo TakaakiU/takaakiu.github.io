@@ -12,7 +12,7 @@ page_data:
     back_color: "lightblue"
 
   category:
-    - title: "Dev Logs"
+    - title: "DevLogs"
       type: id_devlogs
       color: "gray"
     - title: "Documents"
