@@ -199,14 +199,12 @@
 .markdown-style .details {
   margin: 1rem 0;
   padding: 0.5rem;
-  // border: 1px dashed currentColor;
-  // border-radius: 4px;
-  // transition: border 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .markdown-style details[open] {
-  border-style: none none none double;
+  border-left-style: double;
   transform: translateY(-2px);
+  padding-left: 1rem;
 }
 
 .markdown-style summary::before {
