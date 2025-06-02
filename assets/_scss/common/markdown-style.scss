@@ -203,7 +203,8 @@
 
 .markdown-style details[open] {
   border-left-style: double;
-  transform: translateY(-2px);
+  transform: translateX(0.5rem);
+  transition: transform 1.5s ease-out;
   padding-left: 1rem;
 }
 
