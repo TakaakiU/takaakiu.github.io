@@ -58,9 +58,11 @@ Jekyllのテーマは、多言語対応している「**[Mr. Green](https://gith
 
 <summary>原文：What is GitHub Pages? | GitHub公式（ここをクリックして折りたたみを開く）</summary>
 
-> You can use GitHub Pages to host a website about yourself, your organization, or your project directly from a repository on GitHub.
->
-> 引用元：[What is GitHub Pages?](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages){:target="_blank" rel="noopener noreferrer"} より
+```
+You can use GitHub Pages to host a website about yourself, your organization, or your project directly from a repository on GitHub.
+
+引用元：[What is GitHub Pages?](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages){:target="_blank" rel="noopener noreferrer"} より
+```
 
 </details>
 
@@ -98,17 +100,19 @@ Jekyllのテーマは、多言語対応している「**[Mr. Green](https://gith
 
 <summary>原文：GitHub Pages limits | GitHub公式（ここをクリックして折りたたみを開く）</summary>
 
-> GitHub Pages sites are subject to the following usage limits:
+```
+GitHub Pages sites are subject to the following usage limits:
 >
-> - You can only create one user or organization site for each account on GitHub.
-> - GitHub Pages source repositories have a recommended limit of 1 GB. For more information, see [About large files on GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#file-and-repository-size-limitations){:target="_blank" rel="noopener noreferrer"}.
-> - Published GitHub Pages sites may be no larger than 1 GB.
-> - GitHub Pages deployments will timeout if they take longer than 10 minutes.
-> - GitHub Pages sites have a soft bandwidth limit of 100 GB per month.
-> - GitHub Pages sites have a soft limit of 10 builds per hour. This limit does not apply if you build and publish your site with a custom GitHub Actions workflow.
-> - In order to provide consistent quality of service for all GitHub Pages sites, rate limits may apply. These rate limits are not intended to interfere with legitimate uses of GitHub Pages. If your request triggers rate limiting, you will receive an appropriate response with an HTTP status code of 429, along with an informative HTML body.
->
-> 引用元：[GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits){:target="_blank" rel="noopener noreferrer"}
+- You can only create one user or organization site for each account on GitHub.
+- GitHub Pages source repositories have a recommended limit of 1 GB. For more information, see [About large files on GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#file-and-repository-size-limitations){:target="_blank" rel="noopener noreferrer"}.
+- Published GitHub Pages sites may be no larger than 1 GB.
+- GitHub Pages deployments will timeout if they take longer than 10 minutes.
+- GitHub Pages sites have a soft bandwidth limit of 100 GB per month.
+- GitHub Pages sites have a soft limit of 10 builds per hour. This limit does not apply if you build and publish your site with a custom GitHub Actions workflow.
+- In order to provide consistent quality of service for all GitHub Pages sites, rate limits may apply. These rate limits are not intended to interfere with legitimate uses of GitHub Pages. If your request triggers rate limiting, you will receive an appropriate response with an HTTP status code of 429, along with an informative HTML body.
+
+引用元：[GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits){:target="_blank" rel="noopener noreferrer"}
+```
 
 </details>
 　
