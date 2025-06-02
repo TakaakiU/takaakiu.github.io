@@ -22,7 +22,7 @@ date: 2025-05-08 00:00:00 +0900
 # if not specified, date will be used.
 #meta_modify_date: 2022-02-10 08:11:06 +0900
 # check the meta_common_description in _data/owner/[language].yml
-meta_description: "I built a personal website using GitHub Pages, Jekyll, and the Jekyll theme Mr. Green. I'll share the site along with a simple overview of the steps I took to create it."
+meta_description: "Hello, I'm TakaakiU. I used Jekyll and GitHub Pages (github.io), which I've been curious about for a while, to create this website. For the Jekyll theme, I chose 'Mr. Green,' a theme that supports multiple languages. The theme developer shared detailed instructions on social media, making the process easier than I had expected. I'll also share what I did here, as a personal note for future reference."
 
 # optional
 # please use the "image_viewer_on" below to enable image viewer for individual pages or posts (_posts/ or [language]/_posts folders).

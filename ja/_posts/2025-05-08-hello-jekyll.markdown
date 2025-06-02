@@ -7,7 +7,7 @@ title: Jekyll と GitHub Pages でこのサイトを立ち上げました
 # if not specified, .name will be used from _data/owner/[language].yml
 author: TakaakiU
 # multiple category is not supported
-category: blog
+category: Tech
 # multiple tag entries are possible
 tags: [jekyll, github]
 # thumbnail image for post
@@ -22,7 +22,7 @@ date: 2025-05-08 00:00:00 +0900
 # if not specified, date will be used.
 #meta_modify_date: 2022-02-10 08:11:06 +0900
 # check the meta_common_description in _data/owner/[language].yml
-meta_description: "I built a personal website using GitHub Pages, Jekyll, and the Jekyll theme Mr. Green. I'll share the site along with a simple overview of the steps I took to create it."
+meta_description: "はじめまして、 TakaakiU です。以前から気になっていたJekyll（ジキル）とGitHub Pages（github.io）を使って、このWebサイトを立ち上げました。 Jekyllのテーマは、多言語対応している「Mr. Green」というテーマを使わさせて頂きました。テーマ開発者の方がSNSで丁寧に手順を紹介してくれているので、思ったよりも簡単に作業が完了。わたし個人の備忘録を兼ねて実施した事を共有します。"
 
 # optional
 # please use the "image_viewer_on" below to enable image viewer for individual pages or posts (_posts/ or [language]/_posts folders).
@@ -102,7 +102,7 @@ You can use GitHub Pages to host a website about yourself, your organization, or
 
 ```
 GitHub Pages sites are subject to the following usage limits:
->
+
 - You can only create one user or organization site for each account on GitHub.
 - GitHub Pages source repositories have a recommended limit of 1 GB. For more information, see [About large files on GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#file-and-repository-size-limitations){:target="_blank" rel="noopener noreferrer"}.
 - Published GitHub Pages sites may be no larger than 1 GB.
