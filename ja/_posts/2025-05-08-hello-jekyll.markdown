@@ -58,13 +58,9 @@ Jekyllのテーマは、多言語対応している「**[Mr. Green](https://gith
 
 <summary>原文：What is GitHub Pages? | GitHub公式（ここをクリックして折りたたみを開く）</summary>
 
-**↓↓↓ 折りたたみ - ここから ↓↓↓**
-
 > You can use GitHub Pages to host a website about yourself, your organization, or your project directly from a repository on GitHub.
 >
 > 引用元：[What is GitHub Pages?](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages){:target="_blank" rel="noopener noreferrer"} より
-
-**↑↑↑ 折りたたみ - ここまで ↑↑↑**
 
 </details>
 
@@ -102,8 +98,6 @@ Jekyllのテーマは、多言語対応している「**[Mr. Green](https://gith
 
 <summary>原文：GitHub Pages limits | GitHub公式（ここをクリックして折りたたみを開く）</summary>
 
-**↓↓↓ 折りたたみ - ここから ↓↓↓**
-
 > GitHub Pages sites are subject to the following usage limits:
 >
 > - You can only create one user or organization site for each account on GitHub.
@@ -115,8 +109,6 @@ Jekyllのテーマは、多言語対応している「**[Mr. Green](https://gith
 > - In order to provide consistent quality of service for all GitHub Pages sites, rate limits may apply. These rate limits are not intended to interfere with legitimate uses of GitHub Pages. If your request triggers rate limiting, you will receive an appropriate response with an HTTP status code of 429, along with an informative HTML body.
 >
 > 引用元：[GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits){:target="_blank" rel="noopener noreferrer"}
-
-**↑↑↑ 折りたたみ - ここまで ↑↑↑**
 
 </details>
 　
@@ -198,8 +190,6 @@ Fork元（Jekyllテーマ公式のリポジトリ） と Fork先（わたしの�
 <details markdown="1">
 
 <summary>Fork元との差分（ここをクリックして折りたたみを開く）</summary>
-
-**↓↓↓ 折りたたみ - ここから ↓↓↓**
 
 - **_data/conf/main.yml**
 
@@ -1575,8 +1565,6 @@ Fork元（Jekyllテーマ公式のリポジトリ） と Fork先（わたしの�
   exclude: ["Gemfile*", "vendor", ".github", ".vscode", "README*", "CODE_OF_CONDUCT.md", "LICENSE", "docs"]
 
   ```
-
-**↑↑↑ 折りたたみ - ここまで ↑↑↑**
 
 </details>
 
