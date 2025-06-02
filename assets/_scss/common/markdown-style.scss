@@ -209,10 +209,6 @@
   transform: translateY(-2px);
 }
 
-.markdown-style .summary {
-  font-weight: bold;
-}
-
 .markdown-style summary::before {
   content: "→";  /* 閉じている状態を示すアイコン */
   margin-right: 0.5rem;
