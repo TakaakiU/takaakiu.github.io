@@ -161,6 +161,9 @@ $anchor-text-color-light: #206EBC;
   --markdown-styles-code-text-color: #333;
   --markdown-styles-quote-background-color: #eee;
   --markdown-styles-quote-text-color: #{$header-color-light};
+  // TakaakiU Add details-view
+  --markdown-styles-code-details-border-color: #ddd;
+  --markdown-styles-code-details-background-color: #eee;
 }
 // layout: post, post-list
 // common/post-info
