@@ -56,7 +56,7 @@ Jekyllのテーマは、多言語対応している「**[Mr. Green](https://gith
 　
 <details markdown="1">
 
-<summary>▶ 原文：What is GitHub Pages? | GitHub公式（ここをクリックして折りたたみを開く）</summary>
+<summary>原文：What is GitHub Pages? | GitHub公式（ここをクリックして折りたたみを開く）</summary>
 
 **↓↓↓ 折りたたみ - ここから ↓↓↓**
 
@@ -100,7 +100,7 @@ Jekyllのテーマは、多言語対応している「**[Mr. Green](https://gith
 
 <details markdown="1">
 
-<summary>▶ 原文：GitHub Pages limits | GitHub公式（ここをクリックして折りたたみを開く）</summary>
+<summary>原文：GitHub Pages limits | GitHub公式（ここをクリックして折りたたみを開く）</summary>
 
 **↓↓↓ 折りたたみ - ここから ↓↓↓**
 
@@ -197,7 +197,7 @@ Fork元（Jekyllテーマ公式のリポジトリ） と Fork先（わたしの�
 
 <details markdown="1">
 
-<summary>▶ Fork元との差分（ここをクリックして折りたたみを開く）</summary>
+<summary>Fork元との差分（ここをクリックして折りたたみを開く）</summary>
 
 **↓↓↓ 折りたたみ - ここから ↓↓↓**
 
