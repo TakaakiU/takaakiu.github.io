@@ -210,10 +210,10 @@
 }
 
 .markdown-style summary::before {
-  content: "→";  /* 閉じている状態を示すアイコン */
+  content: "▶ ";  /* 閉じている状態を示すアイコン */
   margin-right: 0.5rem;
 }
 
 .markdown-style details[open] summary::before {
-  content: "↓";  /* 開いている状態を示すアイコン */
+  content: "▼ ";  /* 開いている状態を示すアイコン */
 }
