@@ -150,7 +150,154 @@ I followed [this guide](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme/
 I retrieved the differences between the original fork source (official Jekyll theme repository) and my forked repository.  
 The main changes include restricting it to English and Japanese and making minor visual adjustments.
 
-For more details, check the **Click to Expand** section below.
+Below are the results of comparing the directory structures before and after the Fork.
+
+| **Name**              | **Folder**           | **Comparison Result**               | **Extension** |
+|-----------------------|----------------------|-------------------------------------|---------------|
+| `.github`             |                      | Same                                |               |
+| `_data`               |                      | Folder differs                      |               |
+| `├─conf`              | _data               | Folder differs                      |               |
+| `    ├─main.yml`      | _data\conf          | Text file differs                   | yml           |
+| `    ├─others.yml`    | _data\conf          | Text file is identical              | yml           |
+| `    └─posts.yml`     | _data\conf          | Text file is identical              | yml           |
+| `├─const`             | _data               | Same                                |               |
+| `├─content`           | _data               | Folder differs                      |               |
+| `    └─projects`      | _data\content       | Folder differs                      |               |
+| `        ├─en.yml`    | _data\content\projects | Text file differs                  | yml           |
+| ~~`        ├─es.yml`~~| _data\content\projects | Deleted in Fork                    | yml           |
+| ~~`        ├─fr.yml`~~| _data\content\projects | Deleted in Fork                    | yml           |
+| `        ├─ja.yml`    | _data\content\projects | Text file differs                  | yml           |
+| ~~`        ├─ko.yml`~~| _data\content\projects | Deleted in Fork                    | yml           |
+| ~~`        ├─pt.yml`~~| _data\content\projects | Deleted in Fork                    | yml           |
+| ~~`        ├─tr.yml`~~| _data\content\projects | Deleted in Fork                    | yml           |
+| ~~`        └─zh.yml`~~| _data\content\projects | Deleted in Fork                    | yml           |
+| `├─lang`              | _data               | Folder differs                      |               |
+| `    ├─en.yml`        | _data\lang          | Text file differs                   | yml           |
+| ~~`    ├─es.yml`~~    | _data\lang          | Deleted in Fork                     | yml           |
+| ~~`    ├─fr.yml`~~    | _data\lang          | Deleted in Fork                     | yml           |
+| `    ├─ja.yml`        | _data\lang          | Text file differs                   | yml           |
+| ~~`    ├─ko.yml`~~    | _data\lang          | Deleted in Fork                     | yml           |
+| ~~`    ├─pt.yml`~~    | _data\lang          | Deleted in Fork                     | yml           |
+| ~~`    ├─tr.yml`~~    | _data\lang          | Deleted in Fork                     | yml           |
+| ~~`    └─zh.yml`~~    | _data\lang          | Deleted in Fork                     | yml           |
+| `└─owner`             | _data               | Folder differs                      |               |
+| `    ├─en.yml`        | _data\owner         | Text file differs                   | yml           |
+| ~~`    ├─es.yml`~~    | _data\owner         | Deleted in Fork                     | yml           |
+| ~~`    ├─fr.yml`~~    | _data\owner         | Deleted in Fork                     | yml           |
+| `    ├─ja.yml`        | _data\owner         | Text file differs                   | yml           |
+| ~~`    ├─ko.yml`~~    | _data\owner         | Deleted in Fork                     | yml           |
+| ~~`    ├─pt.yml`~~    | _data\owner         | Deleted in Fork                     | yml           |
+| ~~`    ├─tr.yml`~~    | _data\owner         | Deleted in Fork                     | yml           |
+| ~~`    └─zh.yml`~~    | _data\owner         | Deleted in Fork                     | yml           |
+| `_includes`           |                      | Same                                |               |
+| `_layouts`            |                      | Same                                |               |
+| `_posts`              |                      | Folder differs                      |               |
+| ~~`├─2021-08-10-Test-page1.markdown`~~ | _posts | Deleted in Fork            | markdown      |
+| ~~`├─2021-08-11-Test-page2.markdown`~~ | _posts | Deleted in Fork            | markdown      |
+| ~~`├─2021-09-12-Test-page3.markdown`~~ | _posts | Deleted in Fork            | markdown      |
+| ~~`├─2021-09-13-Test-page4.markdown`~~ | _posts | Deleted in Fork            | markdown      |
+| ~~`├─2021-10-14-Test-page5.markdown`~~ | _posts | Deleted in Fork            | markdown      |
+| ~~`├─2021-10-15-Test-page6.markdown`~~ | _posts | Deleted in Fork            | markdown      |
+| ~~`├─2021-11-16-Test-page7.markdown`~~ | _posts | Deleted in Fork            | markdown      |
+| ~~`├─2022-01-01-welcome-to-jekyll.markdown`~~ | _posts | Deleted in Fork        | markdown      |
+| `├─2022-02-10-Examples.markdown`      | _posts               | Text file differs                   | markdown      |
+| `├─2025-05-08-hello-jekyll.markdown`  | _posts               | Added in Fork                       | markdown      |
+| `├─2025-05-17-git-commit-message-guidlines.markdown` | _posts | Added in Fork       | markdown      |
+| `└─2025-05-18-how-to-gibo.markdown`   | _posts               | Added in Fork                       | markdown      |
+| `_scripts`            |                      | Added in Fork                        |               |
+| `assets`              |                      | Folder differs                       |               |
+| `├─_scss`             | assets              | Same                                 |               |
+| `├─css`               | assets              | Same                                 |               |
+| `├─fonts`             | assets              | Same                                 |               |
+| `├─img`               | assets              | Folder differs                       |               |
+| `    ├─about`         | assets\img          | Folder differs                       |               |
+| `        └─about.jpg` | assets\img\about    | Binary file differs                  | jpg           |
+| `    ├─default`       | assets\img          | Folder differs                       |               |
+| `        ├─cc`        | assets\img\default  | Same                                 |               |
+| `        ├─1x1px.png` | assets\img\default  | Binary file is identical             | png           |
+| `        ├─mastodon.svg` | assets\img\default | Text file is identical              | svg           |
+| `        └─profile_pic.jpg` | assets\img\default | Binary file differs                | jpg           |
+| `    ├─favicons`      | assets\img          | Folder differs                       |               |
+| ~~`        ├─android-chrome-192x192.png`~~ | assets\img\favicons | Deleted in Fork  | png           |
+| ~~`        ├─android-chrome-512x512.png`~~ | assets\img\favicons | Deleted in Fork  | png           |
+| `        ├─apple-touch-icon.png`      | assets\img\favicons | Binary file differs                 | png           |
+| `        ├─favicon.ico`                | assets\img\favicons | Binary file differs                 | ico           |
+| ~~`        ├─favicon.svg`~~            | assets\img\favicons | Added in Fork                       | svg           |
+| ~~`        ├─favicon-16x16.png`~~      | assets\img\favicons | Deleted in Fork                     | png           |
+| ~~`        ├─favicon-32x32.png`~~      | assets\img\favicons | Deleted in Fork                     | png           |
+| `        ├─favicon-96x96.png`         | assets\img\favicons | Added in Fork                       | png           |
+| ~~`        ├─mstile-150x150.png`~~     | assets\img\favicons | Deleted in Fork                     | png           |
+| `        ├─web-app-manifest-192x192.png` | assets\img\favicons | Added in Fork                    | png           |
+| `        └─web-app-manifest-512x512.png` | assets\img\favicons | Added in Fork                    | png           |
+| `    ├─home`         | assets\img          | Folder differs                       |               |
+| `        └─home-heading.jpg`          | assets\img\home     | Binary file differs                  | jpg           |
+| `    ├─posts`        | assets\img          | Folder differs                       |               |
+| `        ├─mock1.jpg`| assets\img\posts    | Binary file is identical             | jpg           |
+| `        ├─post_idea.jpg` | assets\img\posts | Added in Fork                       | jpg           |
+| `        ├─post_pic1.jpg` | assets\img\posts | Binary file is identical            | jpg           |
+| `        ├─post_pic2.jpg` | assets\img\posts | Binary file is identical            | jpg           |
+| `        ├─post_pic3.jpg` | assets\img\posts | Binary file is identical            | jpg           |
+| `        └─post_tech.jpg` | assets\img\posts | Added in Fork                       | jpg           |
+| `    └─projects`      | assets\img         | Folder differs                       |               |
+| `        ├─project1_thumb.jpg` | assets\img\projects | Binary file is identical         | jpg           |
+| `        ├─project2_thumb.jpg` | assets\img\projects | Binary file is identical         | jpg           |
+| `        └─projects-heading.jpg` | assets\img\projects | Binary file differs              | jpg           |
+| `├─js`               | assets              | Same                                 |               |
+| `├─browserconfig.xml`| assets              | Text file is identical               | xml           |
+| `├─manifest.json`    | assets              | Text file is identical               | json          |
+| `└─sitemap.xml`      | assets              | Text file is identical               | xml           |
+| ~~`es`~~             |                     | Deleted in Fork                      |               |
+| ~~`fr`~~             |                     | Deleted in Fork                      |               |
+| `ja`                 |                     | Folder differs                       |               |
+| `├─_posts`           | ja                  | Folder differs                       |               |
+| ~~`    ├─2021-08-10-Test-page1.markdown`~~ | ja\_posts | Deleted in Fork       | markdown      |
+| ~~`    ├─2021-08-11-Test-page2.markdown`~~ | ja\_posts | Deleted in Fork       | markdown      |
+| ~~`    ├─2021-09-12-Test-page3.markdown`~~ | ja\_posts | Deleted in Fork       | markdown      |
+| ~~`    ├─2021-09-13-Test-page4.markdown`~~ | ja\_posts | Deleted in Fork       | markdown      |
+| ~~`    ├─2021-10-14-Test-page5.markdown`~~ | ja\_posts | Deleted in Fork       | markdown      |
+| ~~`    ├─2021-10-15-Test-page6.markdown`~~ | ja\_posts | Deleted in Fork       | markdown      |
+| ~~`    └─2021-11-16-Test-page7.markdown`~~ | ja\_posts | Deleted in Fork       | markdown      |
+| `    ├─2022-02-10-Examples.markdown` | ja\_posts | Text file is identical             | markdown      |
+| `    ├─2025-05-08-hello-jekyll.markdown` | ja\_posts | Added in Fork                  | markdown      |
+| `    ├─2025-05-17-git-commit-message-guidlines.markdown` | ja\_posts | Added in Fork | markdown      |
+| `    └─2025-05-18-how-to-gibo.markdown` | ja\_posts | Added in Fork                    | markdown      |
+| `├─query`           | ja                  | Same                                 |               |
+| `├─tabs`            | ja                  | Folder differs                       |               |
+| `    ├─blog`        | ja\tabs             | Same                                 |               |
+| `    ├─about.md`    | ja\tabs             | Text file differs                    | md            |
+| `    ├─archive.md`  | ja\tabs             | Text file differs                    | md            |
+| `    ├─links.md`    | ja\tabs             | Text file differs                    | md            |
+| `    └─projects.md` | ja\tabs             | Text file differs                    | md            |
+| `├─404.md`          | ja                  | Text file is identical               | md            |
+| `├─index.md`        | ja                  | Text file differs                    | md            |
+| `└─privacy-policy.md` | ja                 | Text file differs                    | md            |
+| ~~`ko`~~            |                     | Deleted in Fork                      |               |
+| ~~`pt`~~            |                     | Deleted in Fork                      |               |
+| `query`             |                     | Same                                 |               |
+| `tabs`              |                     | Same                                 |               |
+| ~~`tr`~~            |                     | Deleted in Fork                      |               |
+| ~~`zh`~~            |                     | Deleted in Fork                      |               |
+| `.editorconfig`     |                     | Text file is identical               | editorconfig  |
+| `.gitattributes`    |                     | Text file is identical               | gitattributes |
+| `.gitignore`        |                     | Text file is identical               | gitignore     |
+| `_config.yml`       |                     | Text file differs                    | yml           |
+| `404.md`            |                     | Text file is identical               | md            |
+| `CODE_OF_CONDUCT.md` |                    | Text file is identical               | md            |
+| `Gemfile`           |                     | Text file is identical               |               |
+| `index.md`          |                     | Text file is identical               | md            |
+| `LICENSE.txt`       |                     | Text file is identical               | txt           |
+| `privacy-policy.md` |                     | Text file is identical               | md            |
+| `README.md`         |                     | Text file is identical               | md            |
+| `README-es.md`      |                     | Text file is identical               | md            |
+| `README-fr.md`      |                     | Text file is identical               | md            |
+| `README-ja.md`      |                     | Text file is identical               | md            |
+| `README-ko.md`      |                     | Text file is identical               | md            |
+| `README-pt.md`      |                     | Text file is identical               | md            |
+| `README-tr.md`      |                     | Text file is identical               | md            |
+| `README-zh.md`      |                     | Text file is identical               | md            |
+| `robots.txt`        |                     | Text file is identical               | txt           |
+
+For more detailed **File Content Comparison**, please refer to the **Toggle Display** below.
 
 <details markdown="1">
 
