@@ -1694,6 +1694,6 @@ For more detailed **File Content Comparison**, please refer to the **Toggle Disp
 
 ## References
 
-[Publish your personal website or blog in about 10 minutes using GitHub Pages! | Mr. Green Official YouTube](https://youtu.be/Sd_KBUH5Lk4?si=6WrDanzMG_TiYmhk){:target="_blank" rel="noopener noreferrer"}
+[Publish your personal website or blog in about 10 minutes using GitHub Pages! - Mr. Green Official YouTube](https://youtu.be/Sd_KBUH5Lk4?si=6WrDanzMG_TiYmhk){:target="_blank" rel="noopener noreferrer"}
 
-[Create a GitHub Pages site using the Jekyll theme "Mr. Green" | Mr. Green Official](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme/blob/main/README.md#github-pages){:target="_blank" rel="noopener noreferrer"}
+[Create a GitHub Pages site using the Jekyll theme "Mr. Green" - Mr. Green Official](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme/blob/main/README.md#github-pages){:target="_blank" rel="noopener noreferrer"}
