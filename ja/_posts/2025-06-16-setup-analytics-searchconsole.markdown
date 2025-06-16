@@ -59,7 +59,26 @@ published: false
     +google_site_verification: "UzIBl04gqVYzgsW5OCL1y_74xfoFAx-PZ8eipPmFwh0"
     ```
 
-- _data/conf/main.yml（変更しない）
+- _data/conf/main.yml
+
+    下記は変更点。
+
+    ```diff yml
+    ###########################################################
+    #                Meta for SEO
+    ###########################################################
+    meta:
+    # if you enabled add_hreflang in sitemap.xml, make this false. (According to SEO pros, prevent using both. )
+    hreflang: true
+    # add published date and modified date
+    add_meta_date: false
+    # please note that google does not use keywords, but other search engines may.
+    keywords: true
+    -google_site_verify: false
+    +google_site_verify: true
+    ```
+
+    下記は変更しない。
 
     ```yml
     google:
