@@ -39,7 +39,7 @@ published: false
 
 ### 2. Google Search Console 作成
 
-[こちらの記事](https://sattoga.com/archives/4394)を参考に新規設定を行い、Google Search ConsoleのID（`google_site_verification`）を取得。
+[こちらの記事](https://sattoga.com/archives/4394/#toc6)を参考に新規設定を行い、Google Search ConsoleのID（`google_site_verification`）を取得。
 
 ### 3. Jekyll「Mr.Green」の設定
 
