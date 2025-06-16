@@ -7,7 +7,11 @@ lng_pair = ARGV[0] || "new-post"
 title = ARGV[1] || "New Post Article!"
 author = ARGV[2] || "TakaakiU"
 date = Date.today.strftime("%Y-%m-%d")
-timestamp = Time.now.strftime("%Y-%m-%d %H:%M:%S %z")
+#timestamp = Time.now.strftime("%Y-%m-%d %H:%M:%S %z")
+utc_time = Time.now.utc
+timestamp_en_utc = utc_time.strftime("%Y-%m-%d %H:%M:%S %z")
+jst_time = utc_time + (9 * 3600)
+timestamp_jp_jst = jst_time.strftime("%Y-%m-%d %H:%M:%S") + " +0900"
 
 # 生成するファイルパス
 filename_en = "_posts/#{date}-#{lng_pair}.markdown"
@@ -33,13 +37,13 @@ author: #{author}
 # Tech or Idea
 category: xxxx
 tags: [xxxx, xxxx]
-img: ":post_pic1.jpg"
+img: ":post_xxxx.jpg"
 
 # publish date
-date: #{timestamp}
+date: #{timestamp_en_utc}
 
 # seo
-#meta_modify_date: #{timestamp}
+#meta_modify_date: #{timestamp_en_utc}
 #meta_description: ""
 
 # optional settings
@@ -63,13 +67,13 @@ author: #{author}
 # Tech or Idea
 category: xxxx
 tags: [xxxx, xxxx]
-img: ":post_pic1.jpg"
+img: ":post_xxxx.jpg"
 
 # 公開日
-date: #{timestamp}
+date: #{filename_jp}
 
 # SEO設定
-#meta_modify_date: #{timestamp}
+#meta_modify_date: #{filename_jp}
 #meta_description: ""
 
 # オプション設定
