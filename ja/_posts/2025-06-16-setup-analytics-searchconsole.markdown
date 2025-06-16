@@ -101,3 +101,12 @@ Jekyllのテーマ「Mr. Green」ではサイトマップを自動で生成し�
 GitHub Actions経由でビルドすることで `https://サイト名.github.io/assets/sitemap.xml` に作成されます。
 
 [こちらの記事](https://ikmnjrd.github.io/blog/google-search-console-regist)を参考にGoogle Search Console でサイトマップを登録。
+→ この方法で実行したが、ステータスが「取得できませんでした」となった。
+
+上記でエラーになったので、下記を実施。
+
+> URL検査ツールを使う:
+> Google Search Consoleの上部にある検索バーに、サイトマップのURL https://takaakiu.github.io/assets/sitemap.xml を入力して「URL検査」を実行します。
+> 「URL は Google に登録されていません」と表示されたら、「インデックス登録をリクエスト」をクリックします。これにより、Googleに優先的にこのURLをクロールするように促すことができます。
+
+もしかしたら、数日たたないと反映されないなどもあるかも、様子を見てから再度、実行する予定。
