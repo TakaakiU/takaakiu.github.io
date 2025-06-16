@@ -56,7 +56,7 @@ published: false
     # make sure you set meta.google_site_verify: true in _data/conf/main.yml
     # make sure your environment does not match with google.site_verification.ignore in _data/conf/main.yml
     -google_site_verification: ""
-    +google_site_verification: "8_jWvkhoBK0Td6wxrjSVwk6_LDUDcZgTvcjQ9igiTRs"
+    +google_site_verification: "UzIBl04gqVYzgsW5OCL1y_74xfoFAx-PZ8eipPmFwh0"
     ```
 
 - _data/conf/main.yml（変更しない）
