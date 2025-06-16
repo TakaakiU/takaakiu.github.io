@@ -1,20 +1,20 @@
 ---
 # 多言語ページペアID。このIDは、このページの翻訳とペアになる必要があります。（この名前は一意でなければなりません）
 lng_pair: id_setup-analytics-searchconsole
-title: [Jekyll(Mr.Green) + GitHub Page]Setup to Google Analytics and Google Search Console
+title: [Jekyll(Mr.Green) + GitHub Page]Google Analytics と Google Search Console を導入
 
 # 投稿固有の設定
 author: TakaakiU
 # Tech or Idea
-category: xxxx
-tags: [xxxx, xxxx]
+category: Tech
+tags: [jekyll, github, google]
 img: ":post_tech.jpg"
 
 # 公開日
-date: 2025-06-16 02:54:08 +0000
+date: 2025-06-16 11:54:08 +0900
 
 # SEO設定
-#meta_modify_date: 2025-06-16 02:54:08 +0000
+#meta_modify_date: 2025-06-16 11:54:08 +0900
 #meta_description: ""
 
 # オプション設定
@@ -24,3 +24,53 @@ date: 2025-06-16 02:54:08 +0000
 #search_engine_exclude: true
 published: false
 ---
+
+## Jekyllテーマ「Mr.Green」の設定でGoogle Analytics と Google Search Console を導入
+
+1. Google Analytics 作成
+1. Google Search Console 作成
+1. Jekyll「Mr.Green」の設定
+1. 連携できたことを確認
+
+### 1. Google Analytics 作成
+
+[こちらの記事](https://sattoga.com/archives/4820)を参考に新規設定を行い、Google AnalyticsのID（`google_analytics_id`）を取得。
+
+### 2. Google Search Console 作成
+
+[こちらの記事](https://sattoga.com/archives/4394)を参考に新規設定を行い、Google Search ConsoleのID（`google_site_verification`）を取得。
+
+### 3. Jekyll「Mr.Green」の設定
+
+下記内容でymlファイルを変更。
+
+- _`data/owner/en.yml` と`_data/owner/ja.yml`（2ヶ所変更）
+
+    ```diff yml
+    # if no id is provided, this feature will be disabled.
+    # make sure your environment does not match with google.analytics.ignore in _data/conf/main.yml
+    -google_analytics_id: ""
+    +google_analytics_id: "G-XHK6FGDW7Q"
+
+    # there are different ways to verify web page. One is adding this as meta into html.
+    # make sure you set meta.google_site_verify: true in _data/conf/main.yml
+    # make sure your environment does not match with google.site_verification.ignore in _data/conf/main.yml
+    -google_site_verification: ""
+    +google_site_verification: "8_jWvkhoBK0Td6wxrjSVwk6_LDUDcZgTvcjQ9igiTRs"
+    ```
+
+- _data/conf/main.yml（変更しない）
+
+    ```yml
+    google:
+    analytics:
+        # disable this feature entirely for development or production env.
+        ignore: development
+    site_verification:
+        # disable this feature entirely for development or production env.
+        ignore: development
+    ```
+
+#### 4. 連携できたことを確認
+
+Google Analytics と Google Search Console で接続を確認。
