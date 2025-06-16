@@ -31,6 +31,7 @@ published: false
 1. Google Search Console 作成
 1. Jekyll「Mr.Green」の設定
 1. 連携できたことを確認
+1. Google Search Consoleでサイトマップを登録
 
 ### 1. Google Analytics 作成
 
@@ -93,3 +94,10 @@ published: false
 #### 4. 連携できたことを確認
 
 Google Analytics と Google Search Console で接続を確認。
+
+#### 5. Google Search Console でサイトマップを登録
+
+Jekyllのテーマ「Mr. Green」ではサイトマップを自動で生成してくれる。
+GitHub Actions経由でビルドすることで `https://サイト名.github.io/assets/sitemap.xml` に作成されます。
+
+[こちらの記事](https://ikmnjrd.github.io/blog/google-search-console-regist)を参考にGoogle Search Console でサイトマップを登録。
