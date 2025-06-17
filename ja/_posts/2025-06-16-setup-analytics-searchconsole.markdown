@@ -159,37 +159,39 @@ Sitemap: https://takaakiu.github.io/assets/sitemap.xml
 
 以上、この記事が類似する環境で問題解決の参考になれば幸いです。
 
-## サイトマップの設定を見直し（2025.06.17 追記）
+## 解決できないか違う方法で検証してみる（2025.06.17 追記）
+
+### サイトマップの設定を見直し
 
 Google Search Console のサイトマップ送信で「取得できませんでした」になる原因を調査。
 
-### 原因の特定：サイトマップXMLの構文の不整合
+#### 原因の特定：サイトマップXMLの構文の不整合
 
 自動で生成されたXMLと、生成元となっている /assets/sitemap.xml を比較・分析した結果、2つの原因が考えられる。
 
-#### 原因1（最有力）：hreflang用の名前空間宣言と実態の不一致
+- **原因1（最有力）：hreflang用の名前空間宣言と実態の不一致**
 
-直接的な原因である可能性が非常に高い。
+  直接的な原因である可能性が非常に高い。
 
-- 現状
-    生成されたサイトマップの`<urlset>`タグには、`xmlns:xhtml="http://www.w3.org/1999/xhtml"`という記述あり。これは「このXMLファイル内では、多言語サイト用のxhtml:linkタグを使いますよ」という宣言。
+  - 現状
+      生成されたサイトマップの`<urlset>`タグには、`xmlns:xhtml="http://www.w3.org/1999/xhtml"`という記述あり。これは「このXMLファイル内では、多言語サイト用のxhtml:linkタグを使いますよ」という宣言。
 
-    しかし、`/assets/sitemap.xml`の設定で `add_hreflang: false` となっているため、実際の`<url>`ブロックの中には、対応する`<xhtml:link ...>`タグが一つも出力されていない。
-- 問題点
-    **「使うと宣言しているのに、実際には使っていない」**というこの不整合な状態により「取得できません」という結果を返しているのかも。
+      しかし、`/assets/sitemap.xml`の設定で `add_hreflang: false` となっているため、実際の`<url>`ブロックの中には、対応する`<xhtml:link ...>`タグが一つも出力されていない。
+  - 問題点
+      **「使うと宣言しているのに、実際には使っていない」**というこの不整合な状態により「取得できません」という結果を返しているのかも。
 
-#### 原因2（品質上の問題）：lastmod（最終更新日）の欠如
+- **原因2（品質上の問題）：lastmod（最終更新日）の欠如**
 
-エラーの直接原因ではないかもしれないが、サイトマップの品質として修正すべき点かも。
+  エラーの直接原因ではないかもしれないが、サイトマップの品質として修正すべき点かも。
+  
+  - 現状
+      生成されたサイトマップを見ると、投稿（post）には`<lastmod>`タグがあるが、固定ページ（`/tabs/about.html`など）には**`<lastmod>`タグがない**。
+      これは、`/assets/sitemap.xml`の設定で `add_page_lastmod_date: falseとなっていることが要因のよう。
+  - 問題点
+      `lastmod`は、クローラーにページの鮮度を伝えるための重要な情報らしい。
+      これがないと、Googleはページの更新を効率的に検知できません。必須ではなさそうだが、対応してみる。
 
-- 現状
-    生成されたサイトマップを見ると、投稿（post）には`<lastmod>`タグがあるが、固定ページ（`/tabs/about.html`など）には**`<lastmod>`タグがない**。
-    これは、`/assets/sitemap.xml`の設定で `add_page_lastmod_date: falseとなっていることが要因のよう。
-- 問題点
-    `lastmod`は、クローラーにページの鮮度を伝えるための重要な情報らしい。
-    これがないと、Googleはページの更新を効率的に検知できません。必須ではなさそうだが、対応してみる。
-
-### `/assets/sitemap.xml`の変更内容
+#### `/assets/sitemap.xml`の変更内容
 
 ```diff
 ---
@@ -217,7 +219,7 @@ add_post_thumb_pics_caption: false
 
 ```
 
-### 変更した結果
+#### 変更した結果
 
 変更前の`https://takaakiu.github.io/assets/sitemap.xml`
 
@@ -319,11 +321,11 @@ https://takaakiu.github.io/ja/2025-06-16-setup-analytics-searchconsole 2025-06-1
 
 上記で再度、Google Search Consoleのサイトマップ送信をしたが、変わらずステータスが「取得できませんでした」となってしまった為、変更した`sitemap.xml`を切り戻す。
 
-## 試しにサイトマップのプラグインを導入
+### 試しにサイトマップのプラグインを導入
 
 ポートフォリオのサイトである為、対応は不要とは言ったものの気持ちが悪いので、検証してみます。
 
-### 1. `/_config.yml`でサイトマップのプラグインを追加
+#### 1. `/_config.yml`でサイトマップのプラグインを追加
 
 ```yml
 ###########################################################
@@ -425,7 +427,7 @@ whitelist:
 </urlset>
 ```
 
-### 2. `robots.txt`の自動生成を無効
+#### 2. `robots.txt`の自動生成を無効
 
 `/robots.txt`は、初期状態だとテーマで自動生成されていて内容は下記の通り。
 
@@ -446,13 +448,13 @@ published: false
 ---
 layout: robot
 # to disable this page, simply set published: false or delete this file
--published: false
-+#published: false
+-#published: false
++published: false
 ---
 
 ```
 
-### 2. `robots.txt`を性的ファイルとして配置
+#### 3. `robots.txt`を静的ファイルとして配置
 
 リポジトリ直下に`robots.txt`を作成。内容は下記のとおり。
 
@@ -462,3 +464,7 @@ Disallow:
 
 Sitemap: https://takaakiu.github.io/sitemap.xml
 ```
+
+2025.6.17現在、サイトマップの設定見直し と サイトマップのプラグインを導入 する方法を試しましたが、Google Search Consoleの結果は変わらずステータス「取得できませんでした」になってしまいました。
+
+色々、試しましたがすべて設定を元に戻して、やはり一旦はテーマの自動生成で運用してみます。
