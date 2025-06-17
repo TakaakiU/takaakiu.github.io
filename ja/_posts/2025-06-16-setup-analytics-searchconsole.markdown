@@ -27,6 +27,8 @@ published: false
 
 ## Jekyllテーマ「Mr.Green」の設定でGoogle Analytics と Google Search Console を導入
 
+全体の作業は下記の **5ステップ** です。
+
 1. Google Analytics 作成
 1. Google Search Console 作成
 1. Jekyll「Mr.Green」の設定
@@ -47,7 +49,7 @@ published: false
 
 - _`data/owner/en.yml` と`_data/owner/ja.yml`（2ヶ所変更）
 
-    ```diff yml
+    ```diff
     # if no id is provided, this feature will be disabled.
     # make sure your environment does not match with google.analytics.ignore in _data/conf/main.yml
     -google_analytics_id: ""
@@ -64,7 +66,7 @@ published: false
 
     下記は変更点。
 
-    ```diff yml
+    ```diff
     ###########################################################
     #                Meta for SEO
     ###########################################################
@@ -120,30 +122,32 @@ Sitemap: https://takaakiu.github.io/assets/sitemap.xml
 
 インデックス登録後は検索キーワード毎に関連性や有益性が評価されるので、最終的に検索エンジンに評価されなければインデックスから削除されることも。
 
-##### サイトマップ送信機能を実行するもNG
+- **サイトマップ送信機能を実行するもNG**
 
-[こちらの記事](https://ikmnjrd.github.io/blog/google-search-console-regist)を参考にGoogle Search Console でサイトマップを登録。
-原因は不明ですが実行して直ぐ、ステータスが「取得できませんでした」となる。
+    [こちらの記事](https://ikmnjrd.github.io/blog/google-search-console-regist)を参考にGoogle Search Console でサイトマップを登録。
+    原因は不明ですが実行して直ぐ、ステータスが「取得できませんでした」となる。
 
-Google Search Consoleのサイトマップ送信では、なぜか登録できなかったので、URL検査ツールを使用する方法で実施。
+    Google Search Consoleのサイトマップ送信では、なぜか登録できなかったので、URL検査ツールを使用する方法で実施。
 
-##### URL検査ツールでサイトマップを登録
+- **URL検査ツールでサイトマップを登録**
 
-下記の内容で実施。
+    下記の内容で実施。
 
-> URL検査ツールを使う:
-> Google Search Consoleの上部にある検索バーに、サイトマップのURL 「`https://takaakiu.github.io/assets/sitemap.xml`」 を入力して「URL検査」を実行。
-> 「URL は Google に登録されていません」と表示されたら、「インデックス登録をリクエスト」をクリックします。これにより、Googleに優先的にこのURLをクロールするように促すことが可能。
+    > URL検査ツールを使う:
+    > Google Search Consoleの上部にある検索バーに、サイトマップのURL 「`https://takaakiu.github.io/assets/sitemap.xml`」 を入力して「URL検査」を実行。
+    > 「URL は Google に登録されていません」と表示されたら、「インデックス登録をリクエスト」をクリックします。これにより、Googleに優先的にこのURLをクロールするように促すことが可能。
 
-URL検査ツールの実行直後は送信済みで結果待ち。
-翌日に確認すると、正常にインデックス登録できたとのこと。
+    URL検査ツールの実行直後は送信済みで結果待ち。
+    翌日に確認すると、正常にインデックス登録できたとのこと。
 
-![assets/sitemap.xmlをURL検査ツールで実行しインデックスされたことを確認 - Google Search Console](/assets/img/posts/id_setup-analytics-searchconsole_Google-Search-Console-URL-is-on-Google.webp)
+    ![assets/sitemap.xmlをURL検査ツールで実行しインデックスされたことを確認 - Google Search Console](/assets/img/posts/id_setup-analytics-searchconsole_Google-Search-Console-URL-is-on-Google.webp)
 
-正常にインデックスされたということなので、`site:takaakiu.github.io`で検索し、実際のGoogle検索結果も確認。
-確認した結果、一つだけだがホームページがインデックスされたことを確認！
+    正常にインデックスされたということなので、`site:takaakiu.github.io`で検索し、実際のGoogle検索結果も確認。
+    確認した結果、一つだけだがホームページがインデックスされたことを確認！
 
-![Google Search ConsoleでURL検査ツール実行後、実際のGoogle検索結果においてもホームページがインデックスされたことを確認](/assets/img/posts/id_setup-analytics-searchconsole_Google-Search-Results.webp)
+    ![Google Search ConsoleでURL検査ツール実行後、実際のGoogle検索結果においてもホームページがインデックスされたことを確認](/assets/img/posts/id_setup-analytics-searchconsole_Google-Search-Results.webp)
+
+## さいごに
 
 なぜ、サイトマップ送信機能で実行するとエラーになってしまうのか不明ですが、
 とりあえずインデックスされたので様子を見てみようと思います。

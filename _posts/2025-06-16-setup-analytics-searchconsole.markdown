@@ -27,11 +27,13 @@ published: false
 
 ## Setting up Google Analytics and Google Search Console with the "Mr. Green" Jekyll Theme
 
-1.  Create a Google Analytics Property
-1.  Create a Google Search Console Property
-1.  Configure the "Mr. Green" Jekyll Theme
-1.  Verify the Integration
-1.  Submit the Sitemap in Google Search Console
+The entire process consists of the following **5 steps**.
+
+1. Create a Google Analytics Property
+1. Create a Google Search Console Property
+1. Configure the "Mr. Green" Jekyll Theme
+1. Verify the Integration
+1. Submit the Sitemap in Google Search Console
 
 ### 1. Create a Google Analytics Property
 
@@ -45,9 +47,9 @@ Following [this article (in Japanese)](https://sattoga.com/archives/4394/#toc6),
 
 I modified the following YAML files.
 
--   **`_data/owner/en.yml` and `_data/owner/ja.yml` (2 files changed)**
+- **`_data/owner/en.yml` and `_data/owner/ja.yml` (2 files changed)**
 
-    ```diff yml
+    ```diff
     # if no id is provided, this feature will be disabled.
     # make sure your environment does not match with google.analytics.ignore in _data/conf/main.yml
     -google_analytics_id: ""
@@ -60,11 +62,11 @@ I modified the following YAML files.
     +google_site_verification: "UzIBl04gqVYzgsW5OCL1y_74xfoFAx-PZ8eipPmFwh0"
     ```
 
--   **_data/conf/main.yml**
+- **_data/conf/main.yml**
 
     The following section was changed.
 
-    ```diff yml
+    ```diff
     ###########################################################
     #                Meta for SEO
     ###########################################################
@@ -115,35 +117,37 @@ Sitemap: https://takaakiu.github.io/assets/sitemap.xml
 
 As you can see, the path to the sitemap is automatically reflected in `robots.txt` by the "Mr. Green" theme's functionality, as shown by the `Sitemap: https://takaakiu.github.io/assets/sitemap.xml` line.
 
-By manually submitting this sitemap data to Google Search Console, we can request that our site be indexed приоритетно.
+By manually submitting this sitemap data to Google Search Console, we can request that our site be indexed **with priority**.
 (This search engine process is called **indexing**.)
 
 After indexing, the relevance and usefulness of the site are evaluated for each search keyword, and it can eventually be removed from the index if it is not deemed valuable by the search engine.
 
-##### Failed to Submit Sitemap via the Sitemaps Feature
+- **Failed to Submit Sitemap via the Sitemaps Feature**
 
-Following [this article (in Japanese)](https://ikmnjrd.github.io/blog/google-search-console-regist), I tried to register the sitemap in Google Search Console.
-For razones desconocidas, the status immediately showed "Couldn't fetch".
+    Following [this article (in Japanese)](https://ikmnjrd.github.io/blog/google-search-console-regist), I tried to register the sitemap in Google Search Console.
+    For razones desconocidas, the status immediately showed "Couldn't fetch".
 
-Since submitting the sitemap through the Sitemaps feature failed, I decided to use the URL Inspection tool instead.
+    Since submitting the sitemap through the Sitemaps feature failed, I decided to use the URL Inspection tool instead.
 
-##### Registering the Sitemap with the URL Inspection Tool
+- **Registering the Sitemap with the URL Inspection Tool**
 
-I followed these steps:
+    I followed these steps:
 
-> **Using the URL Inspection Tool:**
-> Enter the sitemap URL `https://takaakiu.github.io/assets/sitemap.xml` into the search bar at the top of Google Search Console and run "URL Inspection".
-> If it shows "URL is not on Google", click "Request Indexing". This allows you to prompt Google to crawl this URL with priority.
+    > **Using the URL Inspection Tool:**
+    > Enter the sitemap URL `https://takaakiu.github.io/assets/sitemap.xml` into the search bar at the top of Google Search Console and run "URL Inspection".
+    > If it shows "URL is not on Google", click "Request Indexing". This allows you to prompt Google to crawl this URL with priority.
 
-Immediately after running the URL Inspection tool, the status was "Submitted" and pending results.
-When I checked the next day, it reported that the sitemap had been successfully indexed.
+    Immediately after running the URL Inspection tool, the status was "Submitted" and pending results.
+    When I checked the next day, it reported that the sitemap had been successfully indexed.
 
-![Confirming the sitemap was indexed using the URL Inspection tool - Google Search Console](/assets/img/posts/id_setup-analytics-searchconsole_Google-Search-Console-URL-is-on-Google.webp)
+    ![Confirming the sitemap was indexed using the URL Inspection tool - Google Search Console](/assets/img/posts/id_setup-analytics-searchconsole_Google-Search-Console-URL-is-on-Google.webp)
 
-Since it was successfully indexed, I searched with `site:takaakiu.github.io` to check the actual Google search results.
-I confirmed that one page, the homepage, was indeed indexed!
+    Since it was successfully indexed, I searched with `site:takaakiu.github.io` to check the actual Google search results.
+    I confirmed that one page, the homepage, was indeed indexed!
 
-![Confirming the homepage was indexed in actual Google search results after using the URL Inspection tool in Google Search Console](/assets/img/posts/id_setup-analytics-searchconsole_Google-Search-Results.webp)
+    ![Confirming the homepage was indexed in actual Google search results after using the URL Inspection tool in Google Search Console](/assets/img/posts/id_setup-analytics-searchconsole_Google-Search-Results.webp)
+
+## Additional Notes
 
 I'm still not sure why I get an error when using the Sitemaps feature, but for now, since the site is indexed, I'll monitor the situation.
 
@@ -152,4 +156,3 @@ If you believe the sitemap should be located at `https://[site-url]/sitemap.xml`
 In my case, this site is intended to be a portfolio, so not being indexed isn't a major issue. Therefore, I will not be registering a separate sitemap plugin.
 
 I hope this article helps anyone facing a similar issue in a similar environment.
-```
