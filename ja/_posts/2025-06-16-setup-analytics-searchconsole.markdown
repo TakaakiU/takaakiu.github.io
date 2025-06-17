@@ -129,6 +129,14 @@ Sitemap: https://takaakiu.github.io/assets/sitemap.xml
 
     Google Search Consoleのサイトマップ送信では、なぜか登録できなかったので、URL検査ツールを使用する方法で実施。
 
+    1. `assets/sitemap.xml`でサイトマップ送信
+        ![`assets/sitemap.xml`でサイトマップ送信 - Google Search Console](/assets/img/posts/id_setup-analytics-searchconsole_GoogleSearchConsole_SitemapSend001.webp)
+    1. サイトマップが送信されたことのメッセージを確認
+        ![サイトマップが送信されたことのメッセージを確認 - Google Search Console](/assets/img/posts/id_setup-analytics-searchconsole_GoogleSearchConsole_SitemapSend002.webp)
+    1. ステータス「取得できませんでした」のエラーが発生
+        ![ステータス「取得できませんでした」のエラーが発生 - Google Search Console](/assets/img/posts/id_setup-analytics-searchconsole_GoogleSearchConsole_SitemapSend003.webp)
+        ![ステータス「取得できませんでした」のエラーが発生 - Google Search Console](/assets/img/posts/id_setup-analytics-searchconsole_GoogleSearchConsole_SitemapSend004.webp)
+
 - **URL検査ツールでサイトマップを登録**
 
     下記の内容で実施。
