@@ -323,7 +323,7 @@ https://takaakiu.github.io/ja/2025-06-16-setup-analytics-searchconsole 2025-06-1
 
 ポートフォリオのサイトである為、対応は不要とは言ったものの気持ちが悪いので、検証してみます。
 
-`/_config.yml`
+### 1. `/_config.yml`でサイトマップのプラグインを追加
 
 ```yml
 ###########################################################
@@ -339,4 +339,126 @@ whitelist:
   - jekyll-paginate
   - jekyll-redirect-from
 +  - jekyll-sitemap
+```
+
+上記の変更内容でコミットしビルドされた結果、`https://takaakiu.github.io/sitemap.xml`が生成。
+
+```xml
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+<loc>https://takaakiu.github.io/posts/2025-05-08-hello-jekyll</loc>
+<lastmod>2025-05-07T15:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>https://takaakiu.github.io/ja/2025-05-08-hello-jekyll</loc>
+<lastmod>2025-05-07T15:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>https://takaakiu.github.io/posts/2025-05-17-git-commit-message-guidlines</loc>
+<lastmod>2025-05-17T01:23:53+00:00</lastmod>
+</url>
+<url>
+<loc>https://takaakiu.github.io/ja/2025-05-17-git-commit-message-guidlines</loc>
+<lastmod>2025-05-17T01:23:53+00:00</lastmod>
+</url>
+<url>
+<loc>https://takaakiu.github.io/posts/2025-05-18-how-to-gibo</loc>
+<lastmod>2025-05-17T16:01:02+00:00</lastmod>
+</url>
+<url>
+<loc>https://takaakiu.github.io/ja/2025-05-18-how-to-gibo</loc>
+<lastmod>2025-05-17T16:01:02+00:00</lastmod>
+</url>
+<url>
+<loc>https://takaakiu.github.io/posts/2025-06-16-setup-analytics-searchconsole</loc>
+<lastmod>2025-06-17T01:33:18+00:00</lastmod>
+</url>
+<url>
+<loc>https://takaakiu.github.io/ja/2025-06-16-setup-analytics-searchconsole</loc>
+<lastmod>2025-06-17T01:33:18+00:00</lastmod>
+</url>
+<url>
+<loc>https://takaakiu.github.io/ja/404.html</loc>
+</url>
+<url>
+<loc>https://takaakiu.github.io/tabs/about.html</loc>
+</url>
+<url>
+<loc>https://takaakiu.github.io/ja/tabs/about.html</loc>
+</url>
+<url>
+<loc>https://takaakiu.github.io/tabs/archive.html</loc>
+</url>
+<url>
+<loc>https://takaakiu.github.io/ja/tabs/archive.html</loc>
+</url>
+<url>
+<loc>https://takaakiu.github.io/tabs/blog/</loc>
+</url>
+<url>
+<loc>https://takaakiu.github.io/ja/tabs/blog/</loc>
+</url>
+<url>
+<loc>https://takaakiu.github.io/ja/</loc>
+</url>
+<url>
+<loc>https://takaakiu.github.io/</loc>
+</url>
+<url>
+<loc>https://takaakiu.github.io/tabs/links.html</loc>
+</url>
+<url>
+<loc>https://takaakiu.github.io/ja/tabs/links.html</loc>
+</url>
+<url>
+<loc>https://takaakiu.github.io/ja/privacy-policy.html</loc>
+</url>
+<url>
+<loc>https://takaakiu.github.io/privacy-policy.html</loc>
+</url>
+<url>
+<loc>https://takaakiu.github.io/tabs/projects.html</loc>
+</url>
+<url>
+<loc>https://takaakiu.github.io/ja/tabs/projects.html</loc>
+</url>
+</urlset>
+```
+
+### 2. `robots.txt`の自動生成を無効
+
+`/robots.txt`は、初期状態だとテーマで自動生成されていて内容は下記の通り。
+
+```txt
+---
+layout: robot
+# to disable this page, simply set published: false or delete this file
+published: false
+---
+
+```
+
+削除しても問題ないが、あとでテーマの自動生成に戻すことをも考えて名前を `/robots.txt` から `/_robots.txt` に変更。
+
+参照されないものの自動生成で読まれないように下記内容で変更。
+
+```diff
+---
+layout: robot
+# to disable this page, simply set published: false or delete this file
+-published: false
++#published: false
+---
+
+```
+
+### 2. `robots.txt`を性的ファイルとして配置
+
+リポジトリ直下に`robots.txt`を作成。内容は下記のとおり。
+
+```txt
+User-agent: *
+Disallow:
+
+Sitemap: https://takaakiu.github.io/sitemap.xml
 ```
