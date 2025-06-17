@@ -22,7 +22,7 @@ date: 2025-06-16 11:54:08 +0900
 #image_lazy_loader_on: true
 #on_site_search_exclude: true
 #search_engine_exclude: true
-published: false
+#published: false
 ---
 
 ## Jekyllテーマ「Mr.Green」の設定でGoogle Analytics と Google Search Console を導入
