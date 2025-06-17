@@ -135,6 +135,7 @@ Sitemap: https://takaakiu.github.io/assets/sitemap.xml
         ![サイトマップが送信されたことのメッセージを確認 - Google Search Console](/assets/img/posts/id_setup-analytics-searchconsole_GoogleSearchConsole_SitemapSend002.webp)
     1. ステータス「取得できませんでした」のエラーが発生
         ![ステータス「取得できませんでした」のエラーが発生 - Google Search Console](/assets/img/posts/id_setup-analytics-searchconsole_GoogleSearchConsole_SitemapSend003.webp)
+        下位は、送信されたサイトマップの欄をクリックし詳細を表示したもの。
         ![ステータス「取得できませんでした」のエラーが発生 - Google Search Console](/assets/img/posts/id_setup-analytics-searchconsole_GoogleSearchConsole_SitemapSend004.webp)
 
 - **URL検査ツールでサイトマップを登録**
