@@ -216,3 +216,127 @@ add_post_thumb_pics_caption: false
 ---
 
 ```
+
+### 変更した結果
+
+変更前の`https://takaakiu.github.io/assets/sitemap.xml`
+
+```xml
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="https://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+<loc>https://takaakiu.github.io/ja/2025-06-16-setup-analytics-searchconsole</loc>
+</url>
+<url>
+<loc>https://takaakiu.github.io/posts/2025-06-16-setup-analytics-searchconsole</loc>
+</url>
+<url>
+<loc>https://takaakiu.github.io/ja/2025-05-18-how-to-gibo</loc>
+<image:image>
+<image:loc>https://takaakiu.github.io/assets/img/posts/post_tech.jpg</image:loc>
+<image:title>.gitignoreを半自動で作成できる「gibo」を使ってみた</image:title>
+</image:image>
+</url>
+<url>
+<loc>https://takaakiu.github.io/posts/2025-05-18-how-to-gibo</loc>
+<image:image>
+<image:loc>https://takaakiu.github.io/assets/img/posts/post_tech.jpg</image:loc>
+<image:title>How to Gibo!</image:title>
+</image:image>
+</url>
+<url>
+<loc>https://takaakiu.github.io/ja/2025-05-17-git-commit-message-guidlines</loc>
+<image:image>
+<image:loc>https://takaakiu.github.io/assets/img/posts/post_idea.jpg</image:loc>
+<image:title>Gitコミットメッセージのガイドラインを要約！</image:title>
+</image:image>
+</url>
+<url>
+<loc>https://takaakiu.github.io/posts/2025-05-17-git-commit-message-guidlines</loc>
+<image:image>
+<image:loc>https://takaakiu.github.io/assets/img/posts/post_idea.jpg</image:loc>
+<image:title>Summary of Git Commit Message Guidelines!</image:title>
+</image:image>
+</url>
+<url>
+<loc>https://takaakiu.github.io/ja/2025-05-08-hello-jekyll</loc>
+<image:image>
+<image:loc>https://takaakiu.github.io/assets/img/posts/post_tech.jpg</image:loc>
+<image:title>GitHub Pages と Jekyll でこのサイトを立ち上げました</image:title>
+</image:image>
+</url>
+<url>
+<loc>https://takaakiu.github.io/posts/2025-05-08-hello-jekyll</loc>
+<image:image>
+<image:loc>https://takaakiu.github.io/assets/img/posts/post_tech.jpg</image:loc>
+<image:title>Built this site using GitHub Pages and Jekyll</image:title>
+</image:image>
+</url>
+<url>
+<loc>https://takaakiu.github.io/tabs/about.html</loc>
+</url>
+<url>
+<loc>https://takaakiu.github.io/ja/tabs/about.html</loc>
+</url>
+<url>
+<loc>https://takaakiu.github.io/tabs/archive.html</loc>
+</url>
+<url>
+<loc>https://takaakiu.github.io/ja/tabs/archive.html</loc>
+</url>
+<url>
+<loc>https://takaakiu.github.io/tabs/blog/</loc>
+</url>
+<url>
+<loc>https://takaakiu.github.io/ja/tabs/blog/</loc>
+</url>
+<url>
+<loc>https://takaakiu.github.io/ja/</loc>
+</url>
+<url>
+<loc>https://takaakiu.github.io/</loc>
+</url>
+<url>
+<loc>https://takaakiu.github.io/tabs/links.html</loc>
+</url>
+<url>
+<loc>https://takaakiu.github.io/ja/tabs/links.html</loc>
+</url>
+<url>
+<loc>https://takaakiu.github.io/tabs/projects.html</loc>
+</url>
+<url>
+<loc>https://takaakiu.github.io/ja/tabs/projects.html</loc>
+</url>
+</urlset>
+```
+
+変更後の`https://takaakiu.github.io/assets/sitemap.xml`
+
+```xml
+https://takaakiu.github.io/ja/2025-06-16-setup-analytics-searchconsole 2025-06-17T01:19:10+00:00 https://takaakiu.github.io/posts/2025-06-16-setup-analytics-searchconsole 2025-06-17T01:19:10+00:00 https://takaakiu.github.io/ja/2025-05-18-how-to-gibo 2025-05-17T16:01:02+00:00 https://takaakiu.github.io/assets/img/posts/post_tech.jpg .gitignoreを半自動で作成できる「gibo」を使ってみた https://takaakiu.github.io/posts/2025-05-18-how-to-gibo 2025-05-17T16:01:02+00:00 https://takaakiu.github.io/assets/img/posts/post_tech.jpg How to Gibo! https://takaakiu.github.io/ja/2025-05-17-git-commit-message-guidlines 2025-05-17T01:23:53+00:00 https://takaakiu.github.io/assets/img/posts/post_idea.jpg Gitコミットメッセージのガイドラインを要約！ https://takaakiu.github.io/posts/2025-05-17-git-commit-message-guidlines 2025-05-17T01:23:53+00:00 https://takaakiu.github.io/assets/img/posts/post_idea.jpg Summary of Git Commit Message Guidelines! https://takaakiu.github.io/ja/2025-05-08-hello-jekyll 2025-05-07T15:00:00+00:00 https://takaakiu.github.io/assets/img/posts/post_tech.jpg GitHub Pages と Jekyll でこのサイトを立ち上げました https://takaakiu.github.io/posts/2025-05-08-hello-jekyll 2025-05-07T15:00:00+00:00 https://takaakiu.github.io/assets/img/posts/post_tech.jpg Built this site using GitHub Pages and Jekyll https://takaakiu.github.io/tabs/about.html https://takaakiu.github.io/ja/tabs/about.html https://takaakiu.github.io/tabs/archive.html https://takaakiu.github.io/ja/tabs/archive.html https://takaakiu.github.io/tabs/blog/ https://takaakiu.github.io/ja/tabs/blog/ https://takaakiu.github.io/ja/ https://takaakiu.github.io/ https://takaakiu.github.io/tabs/links.html https://takaakiu.github.io/ja/tabs/links.html https://takaakiu.github.io/tabs/projects.html https://takaakiu.github.io/ja/tabs/projects.html
+```
+
+上記で再度、Google Search Consoleのサイトマップ送信をしたが、変わらずステータスが「取得できませんでした」となってしまった為、変更した`sitemap.xml`を切り戻す。
+
+## 試しにサイトマップのプラグインを導入
+
+ポートフォリオのサイトである為、対応は不要とは言ったものの気持ちが悪いので、検証してみます。
+
+`/_config.yml`
+
+```yml
+###########################################################
+# Plugins (Plugins supported by GitHub Pages https://pages.github.com/versions/)
+###########################################################
+plugins:
+  - jekyll-paginate
+  - jekyll-redirect-from
++  - jekyll-sitemap
+
+# since GitHub Pages runs jekyll with "--safe" flag, we need to add supported plugins in here. (only github supported plugins are allowed)
+whitelist:
+  - jekyll-paginate
+  - jekyll-redirect-from
++  - jekyll-sitemap
+```
