@@ -49,49 +49,49 @@ published: false
 
 - `_data/owner/en.yml` と`_data/owner/ja.yml`（2ヶ所変更）
 
-    ```diff
-    # if no id is provided, this feature will be disabled.
-    # make sure your environment does not match with google.analytics.ignore in _data/conf/main.yml
-    -google_analytics_id: ""
-    +google_analytics_id: "G-XHK6FGDW7Q"
-
-    # there are different ways to verify web page. One is adding this as meta into html.
-    # make sure you set meta.google_site_verify: true in _data/conf/main.yml
-    # make sure your environment does not match with google.site_verification.ignore in _data/conf/main.yml
-    -google_site_verification: ""
-    +google_site_verification: "UzIBl04gqVYzgsW5OCL1y_74xfoFAx-PZ8eipPmFwh0"
-    ```
+  ```diff
+  # if no id is provided, this feature will be disabled.
+  # make sure your environment does not match with google.analytics.ignore in _data/conf/main.yml
+  -google_analytics_id: ""
+  +google_analytics_id: "G-XHK6FGDW7Q"
+  
+  # there are different ways to verify web page. One is adding this as meta into html.
+  # make sure you set meta.google_site_verify: true in _data/conf/main.yml
+  # make sure your environment does not match with google.site_verification.ignore in _data/conf/main.yml
+  -google_site_verification: ""
+  +google_site_verification: "UzIBl04gqVYzgsW5OCL1y_74xfoFAx-PZ8eipPmFwh0"
+  ```
 
 - `_data/conf/main.yml`
 
-    下記は変更点。
-
-    ```diff
-    ###########################################################
-    #                Meta for SEO
-    ###########################################################
-    meta:
-    # if you enabled add_hreflang in sitemap.xml, make this false. (According to SEO pros, prevent using both. )
-    hreflang: true
-    # add published date and modified date
-    add_meta_date: false
-    # please note that google does not use keywords, but other search engines may.
-    keywords: true
-    -google_site_verify: false
-    +google_site_verify: true
-    ```
-
-    下記は変更しない。
-
-    ```yml
-    google:
-    analytics:
-        # disable this feature entirely for development or production env.
-        ignore: development
-    site_verification:
-        # disable this feature entirely for development or production env.
-        ignore: development
-    ```
+  下記は変更点。
+  
+  ```diff
+  ###########################################################
+  #                Meta for SEO
+  ###########################################################
+  meta:
+  # if you enabled add_hreflang in sitemap.xml, make this false. (According to SEO pros, prevent using both. )
+  hreflang: true
+  # add published date and modified date
+  add_meta_date: false
+  # please note that google does not use keywords, but other search engines may.
+  keywords: true
+  -google_site_verify: false
+  +google_site_verify: true
+  ```
+  
+  下記は変更しない。
+  
+  ```yml
+  google:
+  analytics:
+      # disable this feature entirely for development or production env.
+      ignore: development
+  site_verification:
+      # disable this feature entirely for development or production env.
+      ignore: development
+  ```
 
 #### 4. 連携できたことを確認
 
@@ -336,7 +336,7 @@ https://takaakiu.github.io/ja/2025-06-16-setup-analytics-searchconsole 2025-06-1
 
 #### 1. `/_config.yml`でサイトマップのプラグインを追加
 
-```yml
+```diff
 ###########################################################
 # Plugins (Plugins supported by GitHub Pages https://pages.github.com/versions/)
 ###########################################################
