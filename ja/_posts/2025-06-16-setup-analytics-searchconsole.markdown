@@ -47,7 +47,7 @@ published: false
 
 下記内容でymlファイルを変更。
 
-- _`data/owner/en.yml` と`_data/owner/ja.yml`（2ヶ所変更）
+- `_data/owner/en.yml` と`_data/owner/ja.yml`（2ヶ所変更）
 
     ```diff
     # if no id is provided, this feature will be disabled.
@@ -62,7 +62,7 @@ published: false
     +google_site_verification: "UzIBl04gqVYzgsW5OCL1y_74xfoFAx-PZ8eipPmFwh0"
     ```
 
-- _data/conf/main.yml
+- `_data/conf/main.yml`
 
     下記は変更点。
 
