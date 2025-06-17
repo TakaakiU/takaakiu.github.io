@@ -1,7 +1,7 @@
 ---
 # 多言語ページペアID。このIDは、このページの翻訳とペアになる必要があります。（この名前は一意でなければなりません）
 lng_pair: id_setup-analytics-searchconsole
-title: [Jekyll(Mr.Green) + GitHub Page]Google Analytics と Google Search Console を導入
+title: \[Jekyll(Mr.Green) + GitHub Page]Google Analytics と Google Search Console を導入
 
 # 投稿固有の設定
 author: TakaakiU

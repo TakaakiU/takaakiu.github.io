@@ -1,7 +1,7 @@
 ---
 # multilingual page pair id, this must pair with translations of this page. (This name must be unique)
 lng_pair: id_setup-analytics-searchconsole
-title: [Jekyll(Mr.Green) + GitHub Page]Setup to Google Analytics and Google Search Console
+title: \[Jekyll(Mr.Green) + GitHub Page]Setup to Google Analytics and Google Search Console
 
 # post specific
 author: TakaakiU
