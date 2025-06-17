@@ -138,12 +138,12 @@ I followed these steps:
 Immediately after running the URL Inspection tool, the status was "Submitted" and pending results.
 When I checked the next day, it reported that the sitemap had been successfully indexed.
 
-![Confirming the sitemap was indexed using the URL Inspection tool - Google Search Console](assets/img/posts/id_setup-analytics-searchconsole_Google-Search-Console-URL-is-on-Google.webp)
+![Confirming the sitemap was indexed using the URL Inspection tool - Google Search Console](/assets/img/posts/id_setup-analytics-searchconsole_Google-Search-Console-URL-is-on-Google.webp)
 
 Since it was successfully indexed, I searched with `site:takaakiu.github.io` to check the actual Google search results.
 I confirmed that one page, the homepage, was indeed indexed!
 
-![Confirming the homepage was indexed in actual Google search results after using the URL Inspection tool in Google Search Console](assets/img/posts/id_setup-analytics-searchconsole_Google-Search-Results.webp)
+![Confirming the homepage was indexed in actual Google search results after using the URL Inspection tool in Google Search Console](/assets/img/posts/id_setup-analytics-searchconsole_Google-Search-Results.webp)
 
 I'm still not sure why I get an error when using the Sitemaps feature, but for now, since the site is indexed, I'll monitor the situation.
 

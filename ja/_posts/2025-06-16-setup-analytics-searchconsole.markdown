@@ -138,12 +138,12 @@ Google Search Consoleのサイトマップ送信では、なぜか登録でき�
 URL検査ツールの実行直後は送信済みで結果待ち。
 翌日に確認すると、正常にインデックス登録できたとのこと。
 
-![assets/sitemap.xmlをURL検査ツールで実行しインデックスされたことを確認 - Google Search Console](assets/img/posts/id_setup-analytics-searchconsole_Google-Search-Console-URL-is-on-Google.webp)
+![assets/sitemap.xmlをURL検査ツールで実行しインデックスされたことを確認 - Google Search Console](/assets/img/posts/id_setup-analytics-searchconsole_Google-Search-Console-URL-is-on-Google.webp)
 
 正常にインデックスされたということなので、`site:takaakiu.github.io`で検索し、実際のGoogle検索結果も確認。
 確認した結果、一つだけだがホームページがインデックスされたことを確認！
 
-![Google Search ConsoleでURL検査ツール実行後、実際のGoogle検索結果においてもホームページがインデックスされたことを確認](assets/img/posts/id_setup-analytics-searchconsole_Google-Search-Results.webp)
+![Google Search ConsoleでURL検査ツール実行後、実際のGoogle検索結果においてもホームページがインデックスされたことを確認](/assets/img/posts/id_setup-analytics-searchconsole_Google-Search-Results.webp)
 
 なぜ、サイトマップ送信機能で実行するとエラーになってしまうのか不明ですが、
 とりあえずインデックスされたので様子を見てみようと思います。
