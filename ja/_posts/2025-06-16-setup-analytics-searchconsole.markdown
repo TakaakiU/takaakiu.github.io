@@ -157,5 +157,62 @@ Sitemap: https://takaakiu.github.io/assets/sitemap.xml
 わたしの場合、本サイトはポートフォリオとしての運用を想定しているので、
 インデックスされなくても影響はないので、個別のサイトマップ登録は行いません。
 
-
 以上、この記事が類似する環境で問題解決の参考になれば幸いです。
+
+## サイトマップの設定を見直し（2025.06.17 追記）
+
+Google Search Console のサイトマップ送信で「取得できませんでした」になる原因を調査。
+
+### 原因の特定：サイトマップXMLの構文の不整合
+
+自動で生成されたXMLと、生成元となっている /assets/sitemap.xml を比較・分析した結果、2つの原因が考えられる。
+
+#### 原因1（最有力）：hreflang用の名前空間宣言と実態の不一致
+
+直接的な原因である可能性が非常に高い。
+
+- 現状
+    生成されたサイトマップの`<urlset>`タグには、`xmlns:xhtml="http://www.w3.org/1999/xhtml"`という記述あり。これは「このXMLファイル内では、多言語サイト用のxhtml:linkタグを使いますよ」という宣言。
+
+    しかし、`/assets/sitemap.xml`の設定で `add_hreflang: false` となっているため、実際の`<url>`ブロックの中には、対応する`<xhtml:link ...>`タグが一つも出力されていない。
+- 問題点
+    **「使うと宣言しているのに、実際には使っていない」**というこの不整合な状態により「取得できません」という結果を返しているのかも。
+
+#### 原因2（品質上の問題）：lastmod（最終更新日）の欠如
+
+エラーの直接原因ではないかもしれないが、サイトマップの品質として修正すべき点かも。
+
+- 現状
+    生成されたサイトマップを見ると、投稿（post）には`<lastmod>`タグがあるが、固定ページ（`/tabs/about.html`など）には**`<lastmod>`タグがない**。
+    これは、`/assets/sitemap.xml`の設定で `add_page_lastmod_date: falseとなっていることが要因のよう。
+- 問題点
+    `lastmod`は、クローラーにページの鮮度を伝えるための重要な情報らしい。
+    これがないと、Googleはページの更新を効率的に検知できません。必須ではなさそうだが、対応してみる。
+
+### `/assets/sitemap.xml`の変更内容
+
+```diff
+---
+layout: xml/sitemap
+
+# optional
+# to disable this page, simply set published: false or delete this file
+#published: false
+
+# page specific settings
+# this will add lastmod prop to url's
+-add_page_lastmod_date: false
++add_page_lastmod_date: true
+# this will add all pages lastmod prop to current date. (if date is not defined in corresponding page)
+add_page_lastmod_current_date: false
+add_post_thumb_pics: true
+add_post_thumb_pics_title: true
+add_post_thumb_pics_caption: false
+-add_hreflang: false
++add_hreflang: true
+#image_license_url: "https://example.com/image-license"
+#changefreq: monthly
+#priority: "1.0"
+---
+
+```
