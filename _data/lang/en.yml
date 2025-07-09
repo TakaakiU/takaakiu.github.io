@@ -153,11 +153,6 @@ about:
   button_name: TakaakiU
   email_title: email
 
-# auto generated contents in about page
-auto_content:
-  auto_generated_text: >
-    This site showcases my portfolio. Check out my [GitHub](https://github.com/takaakiu) for project details.
-
 # for links layout
 links:
   title: Links

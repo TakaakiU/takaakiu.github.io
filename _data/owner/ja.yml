@@ -21,6 +21,11 @@ home:
 about:
   sub_title: "$site_sample"
 
+# auto generated contents in about page
+auto_content:
+  auto_generated_text: >
+    ポートフォリオを目的としたサイトです。<br>成果物の詳細は[GitHub](https://github.com/takaakiu)をご参照ください。
+
 # if you don't want to add copyright year, comment or leave it blank.
 # the year during which the claimed copyright for the work was first asserted.
 copyright_start_year: "2025"
