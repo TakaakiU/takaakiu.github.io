@@ -153,6 +153,11 @@ about:
   button_name: TakaakiU
   email_title: メール
 
+# auto generated contents in about page
+auto_content:
+  auto_generated_text: >
+    ポートフォリオを目的としたサイトです。<br>成果物の詳細は[GitHub](https://github.com/takaakiu)をご参照ください。
+
 # for links layout
 links:
   title: リンク
