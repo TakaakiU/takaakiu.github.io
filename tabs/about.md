@@ -42,3 +42,45 @@ img: ":about.jpg"
 {{ website_info_text_first }}
 
 {{ website_info_text_second }}
+
+<div id="github-profile-container">
+    <p>Loading GitHub profile...</p>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const username = 'takaakiu';
+    const container = document.getElementById('github-profile-container');
+
+    fetch(`https://api.github.com/users/${username}`)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        // ここで表示したい情報をHTMLとして組み立てます
+        const profileHtml = `
+          <div style="display: flex; align-items: center; gap: 20px;">
+            <img src="${data.avatar_url}" alt="GitHub Avatar" width="120" height="120" style="border-radius: 50%;">
+            <div>
+              <h3>${data.name} (<a href="${data.html_url}" target="_blank" rel="noopener">@${data.login}</a>)</h3>
+              <p>${data.bio || ''}</p>
+              <p>
+                <strong>${data.followers}</strong> followers &middot; <strong>${data.following}</strong> following
+              </p>
+              <p>
+                Public Repositories: <strong>${data.public_repos}</strong>
+              </p>
+            </div>
+          </div>
+        `;
+        container.innerHTML = profileHtml;
+      })
+      .catch(error => {
+        console.error('Error fetching GitHub profile:', error);
+        container.innerHTML = '<p>Could not load GitHub profile at this time.</p>';
+      });
+  });
+</script>
