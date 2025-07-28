@@ -71,3 +71,7 @@ wingetコマンドを使った自動化の際には、下記2つの同意オプ�
 	インストールするパッケージのライセンス契約に同意する場合のオプション
 - `--accept-source-agreements`
     ソースリポジトリの契約条件に同意する場合のオプション
+
+## 参考文献
+
+https://learn.microsoft.com/en-us/windows/package-manager/winget/install
