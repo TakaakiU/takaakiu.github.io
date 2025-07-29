@@ -1,35 +1,52 @@
 #!/usr/bin/env ruby
 # GitHub Codespaces - bash [ruby _scripts/new_post.rb "new-post" "New Post!"]
-require 'date'
+require 'time'
+require 'fileutils'
 
-# 記事タイトルの取得（引数から受け取る）
-lng_pair = ARGV[0] || "new-post"
-title = ARGV[1] || "New Post Article!"
-author = ARGV[2] || "TakaakiU"
-date = Date.today.strftime("%Y-%m-%d")
-#timestamp = Time.now.strftime("%Y-%m-%d %H:%M:%S %z")
-utc_time = Time.now.utc
-timestamp_en_utc = utc_time.strftime("%Y-%m-%d %H:%M:%S %z")
-jst_time = utc_time + (9 * 3600)
-timestamp_jp_jst = jst_time.strftime("%Y-%m-%d %H:%M:%S") + " +0900"
+# --- 設定項目 ---
+# デフォルト値やパスをここで管理します
+DEFAULT_POST_ID = "new-post"
+DEFAULT_TITLE = "New Post Article!"
+DEFAULT_AUTHOR = "TakaakiU"
+POSTS_DIR_EN = "_posts"
+POSTS_DIR_JP = "ja/_posts"
 
-# 生成するファイルパス
-filename_en = "_posts/#{date}-#{lng_pair}.markdown"
-filename_jp = "ja/_posts/#{date}-#{lng_pair}.markdown"
+# --- スクリプト本体 ---
 
-# 🔍 既存ファイルのチェック
+# 1. 引数の受け取りとバリデーション
+post_id = ARGV[0] || DEFAULT_POST_ID
+title = ARGV[1] || DEFAULT_TITLE
+author = ARGV[2] || DEFAULT_AUTHOR
+
+# 2. 日時情報の生成
+now = Time.now
+date_str = now.strftime("%Y-%m-%d")
+
+timestamp_utc = now.utc.strftime("%Y-%m-%d %H:%M:%S %z")
+# JST (+09:00) のタイムスタンプを生成
+timestamp_jst = now.getlocal("+09:00").strftime("%Y-%m-%d %H:%M:%S %z")
+
+# 3. ファイルパスの生成（File.joinで安全に結合）
+filename_en = File.join(POSTS_DIR_EN, "#{date_str}-#{post_id}.markdown")
+filename_jp = File.join(POSTS_DIR_JP, "ja-#{date_str}-#{post_id}.markdown")
+
+# 4. 既存ファイルのチェックとディレクトリの自動生成
+# 出力先ディレクトリが存在しない場合は作成する
+FileUtils.mkdir_p(POSTS_DIR_EN)
+FileUtils.mkdir_p(POSTS_DIR_JP)
+
 if File.exist?(filename_en) || File.exist?(filename_jp)
-  puts "❌　該当のファイルはすでに存在します。処理を中断します。"
-  puts "　　　- #{filename_en}" if File.exist?(filename_en)
-  puts "　　　- #{filename_jp}" if File.exist?(filename_jp)
+  puts "❌ 該当のファイルはすでに存在します。処理を中断します。"
+  puts "    - #{filename_en}" if File.exist?(filename_en)
+  puts "    - #{filename_jp}" if File.exist?(filename_jp)
   exit
 end
 
-# 記事のテンプレート（英語）
+# 5. 記事テンプレートの生成
 content_en = <<~MD
 ---
 # multilingual page pair id, this must pair with translations of this page. (This name must be unique)
-lng_pair: id_#{lng_pair}
+lng_pair: id_#{post_id}
 title: #{title}
 
 # post specific
@@ -40,10 +57,10 @@ tags: [xxxx, xxxx]
 img: ":post_xxxx.jpg"
 
 # publish date
-date: #{timestamp_en_utc}
+date: #{timestamp_utc}
 
 # seo
-#meta_modify_date: #{timestamp_en_utc}
+#meta_modify_date: #{timestamp_utc}
 #meta_description: ""
 
 # optional settings
@@ -55,11 +72,10 @@ published: false
 ---
 MD
 
-# 記事のテンプレート（日本語）
 content_jp = <<~MD
 ---
 # 多言語ページペアID。このIDは、このページの翻訳とペアになる必要があります。（この名前は一意でなければなりません）
-lng_pair: id_#{lng_pair}
+lng_pair: id_#{post_id}
 title: #{title}
 
 # 投稿固有の設定
@@ -70,10 +86,10 @@ tags: [xxxx, xxxx]
 img: ":post_xxxx.jpg"
 
 # 公開日
-date: #{filename_jp}
+date: #{timestamp_jst}
 
 # SEO設定
-#meta_modify_date: #{filename_jp}
+#meta_modify_date: #{timestamp_jst}
 #meta_description: ""
 
 # オプション設定
@@ -85,10 +101,10 @@ published: false
 ---
 MD
 
-# ファイルを作成
+# 6. ファイルの書き込み
 File.write(filename_en, content_en)
 File.write(filename_jp, content_jp)
 
-puts "🎯　記事ファイルを作成しました:"
-puts "　　　- #{filename_en}"
-puts "　　　- #{filename_jp}"
+puts "🎯 記事ファイルを作成しました:"
+puts "    - #{filename_en}"
+puts "    - #{filename_jp}"
