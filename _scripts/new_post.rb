@@ -28,7 +28,7 @@ timestamp_jst = now.getlocal("+09:00").strftime("%Y-%m-%d %H:%M:%S %z")
 
 # 3. ファイルパスの生成（File.joinで安全に結合）
 filename_en = File.join(POSTS_DIR_EN, "#{date_str}-#{post_id}.markdown")
-filename_jp = File.join(POSTS_DIR_JP, "ja-#{date_str}-#{post_id}.markdown")
+filename_jp = File.join(POSTS_DIR_JP, "#{date_str}-#{post_id}.markdown")
 
 # 4. 既存ファイルのチェックとディレクトリの自動生成
 # 出力先ディレクトリが存在しない場合は作成する
