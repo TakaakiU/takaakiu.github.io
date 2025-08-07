@@ -1,7 +1,7 @@
 ---
 # 多言語ページペアID。このIDは、このページの翻訳とペアになる必要があります。（この名前は一意でなければなりません）
 lng_pair: id_winget-agreement-option
-title: 【自動化する際の注意】wingetをはじめて使う場合は同意が求められるので同意オプションで回避しよう
+title: 【wingetの自動化における注意点】初回実行時の同意について
 
 # 投稿固有の設定
 author: TakaakiU
@@ -11,7 +11,7 @@ tags: [powershell, winget]
 img: ":post_tech.jpg"
 
 # 公開日
-date: ja/_posts/2025-07-07-winget-agreement-option.markdown
+date: 2025-07-07 06:17:18 +0000
 
 # SEO設定
 #meta_modify_date: ja/_posts/2025-07-07-winget-agreement-option.markdown
@@ -39,9 +39,10 @@ Terms of Transaction: https://aka.ms/microsoft-store-terms-of-transaction
 ```
 
 メッセージに一度、応答し同意すると2度と表示されません。
-そのため、開発環境では検証するため手動で応答していて、wingetコマンドを同意オプションなしで自動化。いざテスト環境や本番環境に適用すると同意メッセージに返答していないため、処理が進まず期待通りの結果にならない可能性があります。
+そのため、開発環境では検証するため手動で応答していて、wingetコマンドを同意オプションなしで自動化。いざテスト環境や本番環境に適用すると「同意メッセージに返答していないため、処理が進まず期待通りの結果にならない」となってしまいます。
 
 わたしが検証のために作成したインストーラー（inno setup）でも同意オプションなしでwingetコマンドを実行しています。下記が該当のissファイル（inno setupの設定ファイル）です。
+
 https://github.com/TakaakiU/PyTkinterToPSScript-UserDefined/blob/main/installer/inno-setup_installer.iss
 
 ## wingetコマンドに同意オプション
@@ -49,17 +50,21 @@ https://github.com/TakaakiU/PyTkinterToPSScript-UserDefined/blob/main/installer/
 - インストールするパッケージのライセンス契約に同意する場合は `--accept-package-agreements`
 - ソースリポジトリの契約条件に同意する場合は `--accept-source-agreements`
 
-基本、自動化する際は2つとも引数で指定する必要があります。
+自動化する際は2つとも引数で指定する必要があります。
 
 ### 修正前
 
-```
+`inno-setup_installer.iss`で同意オプションをつけていなかった時。
+
+```inno-setup
 PSArgs := '-ExecutionPolicy Bypass -NoLogo -NonInteractive -WindowStyle Hidden -Command "winget install --id microsoft.powershell --version 7.5.1.0; exit $LASTEXITCODE"';
 ```
 
 ### 修正後
 
-```
+`inno-setup_installer.iss`で同意オプションを追加した結果。
+
+```inno-setup
 PSArgs := '-ExecutionPolicy Bypass -NoLogo -NonInteractive -WindowStyle Hidden -Command "winget install --id microsoft.powershell --version 7.5.1.0 --accept-package-agreements --accept-source-agreements; exit $LASTEXITCODE"';
 ```
 
