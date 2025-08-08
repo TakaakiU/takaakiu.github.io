@@ -53,13 +53,13 @@ date: 2025-06-16 11:54:08 +0900
   # if no id is provided, this feature will be disabled.
   # make sure your environment does not match with google.analytics.ignore in _data/conf/main.yml
   -google_analytics_id: ""
-  +google_analytics_id: "G-XHK6FGDW7Q"
+  +google_analytics_id: "google_analytics_id"
   
   # there are different ways to verify web page. One is adding this as meta into html.
   # make sure you set meta.google_site_verify: true in _data/conf/main.yml
   # make sure your environment does not match with google.site_verification.ignore in _data/conf/main.yml
   -google_site_verification: ""
-  +google_site_verification: "UzIBl04gqVYzgsW5OCL1y_74xfoFAx-PZ8eipPmFwh0"
+  +google_site_verification: "google_site_verification"
   ```
 
 - `_data/conf/main.yml`
