@@ -43,7 +43,7 @@ Terms of Transaction: https://aka.ms/microsoft-store-terms-of-transaction
 
 わたしが検証のために作成したインストーラー（inno setup）でも同意オプションなしでwingetコマンドを実行しています。下記が該当のissファイル（inno setupの設定ファイル）です。
 
-https://github.com/TakaakiU/PyTkinterToPSScript-UserDefined/blob/main/installer/inno-setup_installer.iss
+[https://github.com/TakaakiU/PyTkinterToPSScript-UserDefined/blob/main/installer/inno-setup_installer.iss](https://github.com/TakaakiU/PyTkinterToPSScript-UserDefined/blob/main/installer/inno-setup_installer.iss)
 
 ## wingetコマンドに同意オプション
 
@@ -79,4 +79,4 @@ wingetコマンドを使った自動化の際には、下記2つの同意オプ�
 
 ## 参考文献
 
-https://learn.microsoft.com/en-us/windows/package-manager/winget/install
+[https://learn.microsoft.com/en-us/windows/package-manager/winget/install](https://learn.microsoft.com/en-us/windows/package-manager/winget/install)
