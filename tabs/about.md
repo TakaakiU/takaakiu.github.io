@@ -42,3 +42,47 @@ img: ":about.jpg"
 {{ website_info_text_first }}
 
 {{ website_info_text_second }}
+
+Of course. Here is the English translation of your profile, formatted in GitHub Flavored Markdown.
+
+---
+
+## Name
+
+Uenishi Takaaki
+
+## Skills
+
+Specializing in development on the Microsoft stack and improving business efficiency through automation scripts.
+
+- Developing business applications with C# (.NET) and databases.
+- Automating and streamlining business processes with PowerShell scripts.
+- Building web systems with C# (ASP.NET) and Microsoft Azure.
+- Automating and streamlining business processes with Shell Scripts.
+- Building and configuring environments for operations, maintenance, and monitoring using packaged software.
+
+For more details, please see my [GitHub](https://github.com/takaakiu).
+
+## Experience & Summary
+
+### Professional Experience
+
+- 2020 - Present: In-house Software Engineer                     -> Approx. 5 years
+- 2015 - 2020   : Software Engineer at a Systems Integrator (SI) -> Approx. 5 years
+- 2005 - 2015   : IT Operations & Maintenance Engineer           -> Approx. 10 years
+
+### Personal Projects (Since 2022)
+
+- Sharing technical know-how from professional work and personal projects on my tech blog.
+- Developing a web system with C# (ASP.NET), TypeScript, and AWS. [In Progress]
+- Building a mobile app with Dart/Flutter and Firebase. [In Progress]
+- Browser Extension Development
+- Web Tool Creation
+
+## Strengths & Philosophy
+
+While I enjoy keeping up with the latest technologies, in a professional context, I prioritize the **optimization of TCO (Total Cost of Ownership)** by comprehensively considering various real-world constraints such as human resources, costs, and operational needs.
+
+My philosophy is not to push forward based on technical correctness alone, but to carefully listen to the concerns and expectations of each stakeholder. For instance, I practice tailored communication, such as demonstrating ease of operation to the maintenance team or presenting cost-effectiveness with concrete data to management.
+
+I excel at leading discussions to **constructive conclusions** with a strong focus on TCO.
