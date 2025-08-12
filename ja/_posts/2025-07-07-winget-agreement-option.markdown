@@ -73,7 +73,7 @@ PSArgs := '-ExecutionPolicy Bypass -NoLogo -NonInteractive -WindowStyle Hidden -
 wingetコマンドを使った自動化の際には、下記2つの同意オプションを引数で指定する必要がある
 
 - `--accept-package-agreements`
-	インストールするパッケージのライセンス契約に同意する場合のオプション
+    インストールするパッケージのライセンス契約に同意する場合のオプション
 - `--accept-source-agreements`
     ソースリポジトリの契約条件に同意する場合のオプション
 
