@@ -43,8 +43,6 @@ img: ":about.jpg"
 
 {{ website_info_text_second }}
 
-Of course. Here is the English translation of your profile, formatted in GitHub Flavored Markdown.
-
 ---
 
 ## Name
