@@ -1,7 +1,7 @@
 ---
 # 多言語ページペアID。このIDは、このページの翻訳とペアになる必要があります。（この名前は一意でなければなりません）
 lng_pair: id_relationship-between-kramdown-and-gfm-and-comparison-table
-title: KramdownとGFMの関連性の説明とできること・できないことの比較表
+title: GFMとKramdownの関連性とできること・できないことを比較
 
 # 投稿固有の設定
 author: TakaakiU
@@ -25,12 +25,19 @@ date: 2025-08-12 12:04:51 +0900
 published: false
 ---
 
+GFMとKramdownの関連性とできること・できないことを比較。
+
 ## GitHubのGFM と JekyllのKramdown の関連性
 
-KramdownとGFMは、それぞれがMarkdownの基本仕様を拡張した**独立した「方言（フレーバー）」**。
+GitHub Flavored Markdown（本記事では略語の“GFM”で記載）とKramdownは、それぞれがMarkdownの基本仕様を拡張した**独立した「方言（フレーバー）」**。
 
-- **GFM (GitHub Flavored Markdown)** は、GitHubがドキュメント作成を便利にするために定義した**「書き方のルール」**であり、Webにおける事実上の標準（デファクトスタンダード）です。
-- **Kramdown** は、Jekyllなどが採用するRuby製の高性能な**「変換ソフトウェア（パーサー）」**であり、それ自体がHTMLの属性指定や脚注など、独自の強力な拡張機能を持っています。
+- **[GFM](https://github.github.com/gfm/)**
+    GitHubが定めたMarkdownの「仕様（書き方のルール）」。テーブルやタスクリストといった便利な機能が標準化されており、Webにおける事実上の標準（デファクトスタンダード）となっている。
+    GitHubは、この仕様に基づいて自社開発した**変換ソフトウェア（パーサー）**を内部で利用し、MarkdownをHTMLに変換している。
+
+- **[Kramdown](https://kramdown.gettalong.org/index.html)**
+    Jekyllなどが採用している、**GFMとは別の変換ソフトウェア（パーサー）**となる。
+    GFMの仕様と高い互換性を持つように設計されているため、GFMとして書いたMarkdownのほとんどを正しく解釈可能。それに加えて、KramdownはHTML属性の直接指定や目次生成など、GFMにはない独自の強力な機能も備えている。
 
 両者の関係は、**Kramdownが後からGFMの便利な機能（テーブル、タスクリスト等）を取り込んでサポートした**というもの。そのため、KramdownはGFMの構文を高い互換性で解釈可能だが、逆にGFM（GitHub）がKramdownの独自構文を解釈することはできない。
 
@@ -62,6 +69,6 @@ KramdownとGFMは、それぞれがMarkdownの基本仕様を拡張した**独�
 ## 目的別の使い分け方
 
 - **GitHub上で完結するドキュメント（README等）を書く場合**
-    - **GFM**の仕様に従って書くのが正解。Kramdownの独自記法は使えない。
+    **GFM**の仕様に従って書くのが正解。Kramdownの独自記法は使えない。
 - **Jekyllでウェブサイトを構築する場合**
-    - **Kramdown**の能力を最大限に活用。GFMの便利な記法（テーブル等）を使いつつ、必要に応じてKramdown独自の機能（属性指定、脚注、TOC等）を組み合わせることで、非常に表現力豊かなコンテンツを作成できる。
+    **Kramdown**の能力を最大限に活用。GFMの便利な記法（テーブル等）を使いつつ、必要に応じてKramdown独自の機能（属性指定、脚注、TOC等）を組み合わせることで、表現力豊かなコンテンツを作成できる。

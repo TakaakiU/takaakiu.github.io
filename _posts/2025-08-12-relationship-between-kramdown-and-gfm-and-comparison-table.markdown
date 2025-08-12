@@ -1,7 +1,7 @@
 ---
 # multilingual page pair id, this must pair with translations of this page. (This name must be unique)
 lng_pair: id_relationship-between-kramdown-and-gfm-and-comparison-table
-title: Explain the relationship between Kramdown and GFM and Comparison table
+title: \[Comparing GFM and Kramdown\]Their Relationship and Capabilities
 
 # post specific
 author: TakaakiU
@@ -27,12 +27,17 @@ published: false
 
 ## The Relationship Between GitHub's GFM and Jekyll's Kramdown
 
-Kramdown and GFM are **independent "flavors"** that each extend the base Markdown specification.
+GitHub Flavored Markdown (referred to as "GFM" in this article) and Kramdown are **independent "flavors"** that each extend the base Markdown specification.
 
-- **GFM (GitHub Flavored Markdown)** is a set of **"writing rules"** defined by GitHub to make documentation more convenient, and it has become the de facto standard on the web.
-- **Kramdown** is a high-performance Ruby-based **"conversion software (parser)"** adopted by tools like Jekyll. It possesses its own powerful extensions, such as assigning HTML attributes and creating footnotes.
+- **[GFM](https://github.github.com/gfm/)**
+    The "specification (writing rules)" for Markdown defined by GitHub. It standardizes useful features like tables and task lists, making it the de facto standard on the web.
+    GitHub internally uses its own in-house developed **conversion software (parser)** to convert Markdown to HTML based on this specification.
 
-Their relationship is that **Kramdown later incorporated and supported GFM's convenient features** (like tables and task lists). Consequently, Kramdown can interpret GFM syntax with high compatibility, but GFM (GitHub) cannot interpret Kramdown's unique syntax.
+- **[Kramdown](https://kramdown.gettalong.org/index.html)**
+    A **different conversion software (parser)** adopted by tools like Jekyll.
+    It's designed to be highly compatible with the GFM specification, allowing it to correctly parse most Markdown written as GFM. In addition, Kramdown also provides its own powerful unique features not found in GFM, such as direct attribute assignment and table of contents generation.
+
+Their relationship is that **Kramdown later incorporated and supported GFM's convenient features** (like tables and task lists). Consequently, Kramdown can parse GFM syntax with high compatibility, but conversely, GFM (GitHub) cannot parse Kramdown's unique syntax.
 
 ---
 
@@ -57,11 +62,11 @@ Their relationship is that **Kramdown later incorporated and supported GFM's con
 | Block-level Attribute Assignment | ❌ **Not Supported** | ✅ **Supported** | Allows adding IDs or classes to code blocks and quotes. |
 
 [^1]: In a Jekyll environment, emojis can be enabled in Kramdown using plugins like `jekyll-emoji`.
-[^2]: GFM now supports footnote syntax, but it was a later addition. Kramdown and others originally pioneered this feature.
+[^2]: GFM now also supports footnote syntax, but it was a later addition. Kramdown and others originally pioneered this feature.
 
-## Usage Based on Your Goal
+## How to Use Them Based on Your Goal
 
 - **For documents that live exclusively on GitHub (e.g., READMEs):**
-    - The correct approach is to follow **GFM** specifications. Kramdown's unique syntax cannot be used.
+    The correct approach is to follow **GFM** specifications. Kramdown's unique syntax cannot be used.
 - **When building a website with Jekyll:**
-    - Leverage the full power of **Kramdown**. You can create highly expressive content by using convenient GFM syntax (like tables) while combining it with Kramdown's unique features (like attribute assignment, footnotes, and TOCs) as needed.
+    Leverage the full power of **Kramdown**. You can create highly expressive content by using convenient GFM syntax (like tables) while combining it with Kramdown's unique features (such as attribute assignment, footnotes, and TOCs) as needed.
