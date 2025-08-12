@@ -22,7 +22,7 @@ date: 2025-08-12 10:20:00 +0000
 #image_lazy_loader_on: true
 #on_site_search_exclude: true
 #search_engine_exclude: true
-published: false
+# published: false
 ---
 
 While `winget` is a powerful tool for installing software and applications automatically, there's a crucial point to consider when using it in automation.
