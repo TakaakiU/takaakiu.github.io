@@ -1730,7 +1730,7 @@ Fork元（Jekyllテーマ公式のリポジトリ） と Fork先（わたしの�
     MarkdownやHTMLファイルを静的ウェブサイトに変換するツール。GitHub Pagesが公式にサポートしていることもあり連携が非常に良い。
     リポジトリにプッシュするだけでサイトが簡単に公開可能。シンプルかつ高速なウェブ構築に最適。
   - Jekyll テーマ「Mr. Green」
-    開発者のお名前を見つけることができませんでしたが、[@MrGreensWorkshop](https://github.com/MrGreensWorkshop) さんが開発したJekyllのテーマ。
+    開発者のお名前を見つけることができませんでしたが、[@MrGreensWorkshop](https://github.com/MrGreensWorkshop){:target="_blank" rel="noopener noreferrer"} さんが開発したJekyllのテーマ。
     2022年にリリースされており、多言語の対応が可能。公式のリポジトリにない言語もユーザーで追加することが可能。
     まだ試していないが設定ファイルをみるとGoogle AnalyticsやGoogle Search Consoleとも連携が可能だと思われる。
 

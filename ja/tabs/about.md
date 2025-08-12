@@ -59,7 +59,7 @@ Uenishi Takaaki
 - ShellScriptを使った自動化・業務改善・業務効率化
 - 運用保守や監視パッケージソフトを使った環境構築
 
-詳細は[GitHub](https://github.com/takaakiu)をご参照ください。
+詳細は[GitHub](https://github.com/takaakiu){:target="_blank" rel="noopener noreferrer"}をご参照ください。
 
 ## 経歴・職務要約
 

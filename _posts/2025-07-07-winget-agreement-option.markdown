@@ -43,7 +43,7 @@ This can lead to a common pitfall: during development, you might manually respon
 
 I encountered this exact issue with an installer I created using Inno Setup, which executes a `winget` command without the necessary consent options. You can see the relevant Inno Setup script (`.iss` file) at the link below:
 
-[https://github.com/TakaakiU/PyTkinterToPSScript-UserDefined/blob/main/installer/inno-setup_installer.iss](https://github.com/TakaakiU/PyTkinterToPSScript-UserDefined/blob/main/installer/inno-setup_installer.iss)
+[https://github.com/TakaakiU/PyTkinterToPSScript-UserDefined/blob/main/installer/inno-setup_installer.iss](https://github.com/TakaakiU/PyTkinterToPSScript-UserDefined/blob/main/installer/inno-setup_installer.iss){:target="_blank" rel="noopener noreferrer"}
 
 ### The Solution: Use Agreement Options with winget
 
@@ -81,4 +81,4 @@ When automating tasks with `winget`, you must include the following two agreemen
 
 ### References
 
-[https://learn.microsoft.com/en-us/windows/package-manager/winget/install](https://learn.microsoft.com/en-us/windows/package-manager/winget/install)
+[https://learn.microsoft.com/en-us/windows/package-manager/winget/install](https://learn.microsoft.com/en-us/windows/package-manager/winget/install){:target="_blank" rel="noopener noreferrer"}

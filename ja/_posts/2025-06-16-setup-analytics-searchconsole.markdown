@@ -37,11 +37,11 @@ meta_description: "Jekyllテーマ「Mr.Green」の設定でGoogle Analytics と
 
 ### 1. Google Analytics 作成
 
-[こちらの記事](https://sattoga.com/archives/4820)を参考に新規設定を行い、Google AnalyticsのID（`google_analytics_id`）を取得。
+[こちらの記事](https://sattoga.com/archives/4820){:target="_blank" rel="noopener noreferrer"}を参考に新規設定を行い、Google AnalyticsのID（`google_analytics_id`）を取得。
 
 ### 2. Google Search Console 作成
 
-[こちらの記事](https://sattoga.com/archives/4394/#toc6)を参考に新規設定を行い、Google Search ConsoleのID（`google_site_verification`）を取得。
+[こちらの記事](https://sattoga.com/archives/4394/#toc6){:target="_blank" rel="noopener noreferrer"}を参考に新規設定を行い、Google Search ConsoleのID（`google_site_verification`）を取得。
 
 ### 3. Jekyll「Mr.Green」の設定
 
@@ -104,7 +104,7 @@ GitHub Actions経由でビルドすることで `https://サイト名.github.io/
 
 基本的にWebサイトには、`robots.txt`というファイルがトップに配置されている。
 本サイトだと `https://takaakiu.github.io/robots.txt`。
-このテキストファイルは、検索エンジンの[クローラー](https://ja.wikipedia.org/wiki/クローラ)向けたファイルでサイトの概要を検索エンジン側に伝えることを目的としたもの。
+このテキストファイルは、検索エンジンの[クローラー](https://ja.wikipedia.org/wiki/クローラ){:target="_blank" rel="noopener noreferrer"}向けたファイルでサイトの概要を検索エンジン側に伝えることを目的としたもの。
 
 2025年6月17日現在、本サイトの`robots.txt`は下記のとおり。
 
@@ -124,7 +124,7 @@ Sitemap: https://takaakiu.github.io/assets/sitemap.xml
 
 - **サイトマップ送信機能を実行するもNG**
 
-    [こちらの記事](https://ikmnjrd.github.io/blog/google-search-console-regist)を参考にGoogle Search Console でサイトマップを登録。
+    [こちらの記事](https://ikmnjrd.github.io/blog/google-search-console-regist){:target="_blank" rel="noopener noreferrer"}を参考にGoogle Search Console でサイトマップを登録。
     原因は不明ですが実行して直ぐ、ステータスが「取得できませんでした」となる。
 
     Google Search Consoleのサイトマップ送信では、なぜか登録できなかったので、URL検査ツールを使用する方法で実施。

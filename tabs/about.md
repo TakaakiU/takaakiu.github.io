@@ -59,7 +59,7 @@ Specializing in development on the Microsoft stack and improving business effici
 - Automating and streamlining business processes with Shell Scripts.
 - Building and configuring environments for operations, maintenance, and monitoring using packaged software.
 
-For more details, please see my [GitHub](https://github.com/takaakiu).
+For more details, please see my [GitHub](https://github.com/takaakiu){:target="_blank" rel="noopener noreferrer"}.
 
 ## Experience & Summary
 

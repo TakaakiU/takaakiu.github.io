@@ -1688,7 +1688,7 @@ For more detailed **File Content Comparison**, please refer to the **Toggle Disp
   - **Jekyll**  
     A tool that converts Markdown and HTML files into static websites. It is officially supported by GitHub Pages, making integration seamless. Simply push to the repository, and the site can be easily published. Perfect for simple, fast web development.
   - **Jekyll Theme "Mr. Green"**  
-    While the developer's name couldn’t be identified, this Jekyll theme was developed by [@MrGreensWorkshop](https://github.com/MrGreensWorkshop).
+    While the developer's name couldn’t be identified, this Jekyll theme was developed by [@MrGreensWorkshop](https://github.com/MrGreensWorkshop){:target="_blank" rel="noopener noreferrer"}.
     Released in 2022, it supports multilingual functionality, allowing users to add languages not included in the official repository.  
     Although I haven’t tried it yet, examining the configuration files suggests it can integrate with Google Analytics and Google Search Console.
 

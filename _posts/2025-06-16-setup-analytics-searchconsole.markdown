@@ -37,11 +37,11 @@ The entire process consists of the following **5 steps**:
 
 ### 1. Create a Google Analytics Property
 
-Following [this article (in Japanese)](https://sattoga.com/archives/4820), set up a new property and obtain your Google Analytics ID (`google_analytics_id`).
+Following [this article (in Japanese)](https://sattoga.com/archives/4820){:target="_blank" rel="noopener noreferrer"}, set up a new property and obtain your Google Analytics ID (`google_analytics_id`).
 
 ### 2. Create a Google Search Console Property
 
-Following [this article (in Japanese)](https://sattoga.com/archives/4394/#toc6), set up a new property and obtain your Google Search Console ID (`google_site_verification`).
+Following [this article (in Japanese)](https://sattoga.com/archives/4394/#toc6){:target="_blank" rel="noopener noreferrer"}, set up a new property and obtain your Google Search Console ID (`google_site_verification`).
 
 ### 3. Configure the Jekyll "Mr.Green" Theme
 
@@ -102,7 +102,7 @@ Verify the connection in Google Analytics and Google Search Console.
 The Jekyll theme "Mr. Green" automatically generates a sitemap.
 By building the site via GitHub Actions, it is created at `https://your-site.github.io/assets/sitemap.xml`.
 
-Typically, websites have a file named `robots.txt` in the root directory. For this site, it's at `https://takaakiu.github.io/robots.txt`. This text file is intended for search engine [crawlers](https://en.wikipedia.org/wiki/Web_crawler) and aims to communicate the site's structure to the search engine.
+Typically, websites have a file named `robots.txt` in the root directory. For this site, it's at `https://takaakiu.github.io/robots.txt`. This text file is intended for search engine [crawlers](https://en.wikipedia.org/wiki/Web_crawler){:target="_blank" rel="noopener noreferrer"} and aims to communicate the site's structure to the search engine.
 
 As of June 17, 2025, this site's `robots.txt` is as follows:
 
@@ -121,7 +121,7 @@ After indexing, pages are evaluated for relevance and usefulness for each search
 
 - **Sitemap submission fails**
 
-    Following [this article (in Japanese)](https://ikmnjrd.github.io/blog/google-search-console-regist), I tried to submit the sitemap in Google Search Console. The cause is unknown, but immediately after submission, the status became "Couldn't fetch."
+    Following [this article (in Japanese)](https://ikmnjrd.github.io/blog/google-search-console-regist){:target="_blank" rel="noopener noreferrer"}, I tried to submit the sitemap in Google Search Console. The cause is unknown, but immediately after submission, the status became "Couldn't fetch."
 
     Since the sitemap submission in Google Search Console failed, I used the URL Inspection tool instead.
 

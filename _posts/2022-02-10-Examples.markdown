@@ -110,7 +110,7 @@ kbd text <kbd>Hello world</kbd>
 
 ### Link
 
-This is [Mr. Green Jekyll Theme](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme), a simple theme built for [Jekyll](https://jekyllrb.com/).
+This is [Mr. Green Jekyll Theme](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme){:target="_blank" rel="noopener noreferrer"}, a simple theme built for [Jekyll](https://jekyllrb.com/){:target="_blank" rel="noopener noreferrer"}.
 
 \* Hello world! This is **[{{ site.data.owner[site.data.conf.main.default_lng].brand }}]({{ site.url }})**
 
