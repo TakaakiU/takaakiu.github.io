@@ -11,11 +11,11 @@ tags: [powershell, winget]
 img: ":post_tech.jpg"
 
 # publish date
-date: 2025-08-12 10:20:00 +0000
+date: 2025-08-12 00:00:00 +0900
 
 # seo
 #meta_modify_date: 2025-07-07 06:17:18 +0000
-#meta_description: ""
+meta_description: "While `winget` is a powerful tool for installing software and applications automatically, there's a crucial point to consider when using it in automation. When you run a `winget` command for the first time on a machine, you are prompted to agree to the terms and conditions of the package source repository."
 
 # optional settings
 #image_viewer_on: true

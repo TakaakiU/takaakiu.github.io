@@ -14,7 +14,7 @@ date: 2025-05-18 01:01:02 +0900
 
 # SEO設定
 #meta_modify_date: 2025-05-18 01:01:02 +0900
-#meta_description: ""
+meta_description: ".gitignoreを半自動で作成できる「gibo」を使ってみた"
 
 # オプション設定
 #image_viewer_on: true

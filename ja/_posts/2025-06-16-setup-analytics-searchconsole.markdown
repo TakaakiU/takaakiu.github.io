@@ -15,7 +15,7 @@ date: 2025-06-16 11:54:08 +0900
 
 # SEO設定
 #meta_modify_date: 2025-06-16 11:54:08 +0900
-#meta_description: ""
+meta_description: "Jekyllテーマ「Mr.Green」の設定でGoogle Analytics と Google Search Console を導入。全体の作業は下記の **5ステップ** です。"
 
 # オプション設定
 #image_viewer_on: true

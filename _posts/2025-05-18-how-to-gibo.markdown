@@ -14,7 +14,7 @@ date: 2025-05-18 01:01:02 +0900
 
 # seo
 #meta_modify_date: 2025-05-18 01:01:02 +0900
-#meta_description: ""
+meta_description: "How to Gibo!"
 
 # optional settings
 #image_viewer_on: true

@@ -15,7 +15,7 @@ date: 2025-06-16 02:54:08 +0000
 
 # seo
 #meta_modify_date: 2025-06-16 02:54:08 +0000
-#meta_description: ""
+meta_description: "Setting up Google Analytics and Google Search Console with the Jekyll Theme [Mr.Green]. The entire process consists of the following 5 steps."
 
 # optional settings
 #image_viewer_on: true

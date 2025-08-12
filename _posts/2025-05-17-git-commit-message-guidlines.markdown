@@ -14,7 +14,7 @@ date: 2025-05-17 01:23:53 +0000
 
 # seo
 #meta_modify_date: 2025-05-17 01:23:53 +0000
-#meta_description: ""
+meta_description: "Summary of Git Commit Message Guidelines!"
 
 # optional settings
 #image_viewer_on: true

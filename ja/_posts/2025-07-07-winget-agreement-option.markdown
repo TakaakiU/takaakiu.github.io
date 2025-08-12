@@ -11,11 +11,11 @@ tags: [powershell, winget]
 img: ":post_tech.jpg"
 
 # 公開日
-date: 2025-08-12 10:20:00 +0000
+date: 2025-08-12 00:00:00 +0900
 
 # SEO設定
 #meta_modify_date: ja/_posts/2025-07-07-winget-agreement-option.markdown
-#meta_description: ""
+meta_description: "wingetは自動でソフトやアプリがインストールできる便利なツールですが、自動化する場合には注意が必要です。タイトルのとおり、はじめてwingetコマンドを使う端末の場合はパッケージやソースリポジトリの契約に同意する必要があります。"
 
 # オプション設定
 #image_viewer_on: true
