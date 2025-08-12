@@ -11,7 +11,7 @@ tags: [powershell, winget]
 img: ":post_tech.jpg"
 
 # publish date
-date: 2025-07-07 06:17:18 +0000
+date: 2025-08-12 10:20:00 +0000
 
 # seo
 #meta_modify_date: 2025-07-07 06:17:18 +0000

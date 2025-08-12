@@ -11,7 +11,7 @@ tags: [powershell, winget]
 img: ":post_tech.jpg"
 
 # 公開日
-date: 2025-07-07 06:17:18 +0000
+date: 2025-08-12 10:20:00 +0000
 
 # SEO設定
 #meta_modify_date: ja/_posts/2025-07-07-winget-agreement-option.markdown
