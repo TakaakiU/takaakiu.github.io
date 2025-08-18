@@ -47,7 +47,7 @@ img: ":about.jpg"
 
 ## 名前
 
-Uenishi Takaaki
+Takaaki Uenishi
 
 ## スキル
 

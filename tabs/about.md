@@ -47,7 +47,7 @@ img: ":about.jpg"
 
 ## Name
 
-Uenishi Takaaki
+Takaaki Uenishi
 
 ## Skills
 
