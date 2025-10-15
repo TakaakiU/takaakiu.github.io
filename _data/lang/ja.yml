@@ -175,7 +175,7 @@ privacy-policy:
 constants:
   greetings: こんにちは
   welcome: ようこそ
-  sample: サンプル
+  #sample: サンプル
 
 # for contact form
 contact_form:
