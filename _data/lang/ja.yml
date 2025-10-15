@@ -175,11 +175,7 @@ privacy-policy:
 constants:
   greetings: こんにちは
   welcome: ようこそ
-<<<<<<< HEAD
-  sample: サンプル
-=======
-  sample: 
->>>>>>> parent of 66b70c6 (Revert "fix: 日本語の記事一覧が表示されないため切り分け")
+  #sample: サンプル
 
 # for contact form
 contact_form:
