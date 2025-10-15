@@ -1,7 +1,7 @@
 ---
 # multilingual page pair id, this must pair with translations of this page. (This name must be unique)
 lng_pair: id_winget-agreement-option
-title: "Warning: winget Automation and First-Run Consent"
+title: \[Warning\] winget Automation and First-Run Consent
 
 # post specific
 author: TakaakiU
