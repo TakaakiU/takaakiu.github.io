@@ -73,11 +73,11 @@ comments:
   # - Enter your repository name, and it will create the following settings for you under "Enable giscus".
   # - Get the corresponding items and fill in the items below.
   # For other settings, please check the _data/conf/posts.yml file.
-  # giscus:
-  #   repo: "takaakiu/takaakiu.github.io"
-  #   repo-id: "R_kgDOOmaUTQ"
-  #   category: "Announcements"
-  #   category-id: "DIC_kwDOOmaUTc4CrAeU"
+  giscus:
+    repo: "takaakiu/takaakiu.github.io"
+    repo-id: "R_kgDOOmaUTQ"
+    category: "Announcements"
+    category-id: "DIC_kwDOOmaUTc4CrAeU"
 
 # if no id is provided, this feature will be disabled.
 # make sure your environment does not match with google.analytics.ignore in _data/conf/main.yml
