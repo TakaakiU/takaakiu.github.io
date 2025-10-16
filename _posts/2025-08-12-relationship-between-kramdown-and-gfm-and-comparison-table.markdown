@@ -1,7 +1,7 @@
 ---
 # multilingual page pair id, this must pair with translations of this page. (This name must be unique)
 lng_pair: id_relationship-between-kramdown-and-gfm-and-comparison-table
-title: \[Comparing GFM and Kramdown\]Their Relationship and Capabilities
+title: "[Comparing GFM and Kramdown]Their Relationship and Capabilities"
 
 # post specific
 author: TakaakiU
