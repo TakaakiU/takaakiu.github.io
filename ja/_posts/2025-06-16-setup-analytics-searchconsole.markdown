@@ -168,7 +168,6 @@ Sitemap: https://takaakiu.github.io/assets/sitemap.xml
 
 
 以上、この記事が類似する環境で問題解決の参考になれば幸いです。
-<<<<<<< HEAD
 
 ## 解決できないか違う方法で検証してみる（2025.06.17 追記）
 
@@ -479,5 +478,3 @@ Sitemap: https://takaakiu.github.io/sitemap.xml
 2025.6.17現在、サイトマップの設定見直し と サイトマップのプラグインを導入 する方法を試しましたが、Google Search Consoleの結果は変わらずステータス「取得できませんでした」になってしまいました。
 
 色々、試しましたがすべて設定を元に戻して、やはり一旦はテーマの自動生成で運用してみます。
-=======
->>>>>>> parent of 4d5fd4b (docs: 下書き保存)
